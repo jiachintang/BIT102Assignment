@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+
+    </header>
+
+    <div class="background">
+        
+        <div class="pageLayout">
+            <!-- left column Your Cart -->
+            <div class="cart">
+                <p>Your Cart </p>
+                <table>
+                    <colgroup>
+                        <col span="1" style="width: 70%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                    </colgroup>
+        
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic/freshdurian.png" alt="">
+                                    <div>
+                                        <p>Fresh Cream 3D Durian Cake</p>
+                                        <small>Price: $89.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$89.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic/WhatsApp_Image_2018-12-28_at_17.29.02.jpeg" alt="">
+                                    <div>
+                                        <p>Cocoa Castle</p>
+                                        <small>Price: $79.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$79.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic\Untitled_sklDIC1.png" alt="">
+                                    <div>
+                                        <p>Berry Merry</p>
+                                        <small>Price: $99.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input type="number" value="1"></td>
+                            <td>$99.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">0% SST</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Discount</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Delivery Fee</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Total:</th>
+                            <td>$267.00</td>
+                        </tr>
+        
+                    </tfoot>
+                </table>
+                <div class="cancel-checkout">
+                    <button class="button">Cancel Order</button>
+                    <button class="button">Check Out</button>
+                </div>
+            </div>
+            <!-- Right Column Your Information -->
+            <div class="information">
+                <p>Your Information</p>
+                <form>
+                    <label for="custName">Name *</label>
+                    <br>
+                    <input type="text" name="custName" id="custName" placeholder="" required>
+                    <br><br>
+                    <label for="phoneNum">Phone Number *</label>
+                    <br>
+                    <input type="text" name="phoneNum" id="phoneNum" placeholder="012-3456789" required>
+                    <br><br>
+                    <label for="email">E-mail *</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="you@yourdomain.com" required>
+                    <br><br>
+        
+                    <label for="pickup">Self Pick Up at</label>
+                    <br>
+                    <select name="pickup" id="pickup">
+                        <option value="def">Please select a location</option>
+                        <option value="bukitIndah">Bukit Indah</option>
+                        <option value="KSL">KSL</option>
+                        <option value="mtAustin">Mount Austin</option>
+                        <option value="pelangi">Pelangi</option>
+                        <option value="permasJaya">Permas Jaya</option>
+                        <option value="seriAlam">Seri Alam</option>
+                        <option value="suteraUtama">Sutera Utama</option>
+                        <option value="tamanGaya">Taman Gaya</option>
+                        <option value="setapak">Setapak</option>
+                        <option value="sriPetaling">Sri Petaling</option>
+                        <option value="bktTinggi"> Bukit Tinggi</option>
+                        <option value="puchong">Puchong</option>
+                    </select>
+                    <br><br>
+                    <label for="dateTime">Self Collect Date & Time (Order must be made at least 4 days prior to collectiond date)</label>
+                    <br>
+                    <input type="date">
+                    <br>
+                    <input type="time">
+                    <br><br>
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
