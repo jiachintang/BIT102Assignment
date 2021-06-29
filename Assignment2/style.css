@@ -1,29 +1,30 @@
+/*General */
 body {
 	margin: 0;
 	padding: 0;
   background-color: #f5fb92;
   font-family:Arial, Helvetica, sans-serif;
 }
-
+h2 {text-align: center;}
+/* Header*/
 .header{
  margin: 0;
  padding: 20px 20px 0 0;
  text-align: center;
  background-image: url("pic/Header.png");
  background-position: left center;
- background-position-x: 100px;
+ background-position-x: 150px;
  background-color: #f5fb92;
  background-repeat: no-repeat;
- background-size: 80%;
+ background-size: 70%;
  height: 110px;
  color:transparent;
  font-size: 100%;
 }
 .header a{
-  display:flex-end;
-  padding-top: 100px;
+  padding-top: 200px;
 }
-
+/*Navigation Bar*/
 .navbar {
   margin: 0;
 	padding: 0;
@@ -31,7 +32,6 @@ body {
   overflow: auto;
   float: none;
   background-color: #310303;
-  margin-top:150;
   width: 100%; 
   top: 0;
 }
@@ -74,6 +74,39 @@ body {
   border: none;
 }
 
+#search {
+  display:inline-block;
+}
+/*flex layout*/
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  background-color: #f5fb92;
+}
+/*Footer*/
+footer{margin: 0;
+	padding: 0;}
+footer,footer div{
+  font-size:90%;
+  background-color: #f5fb92;
+  color:brown;
+}
+.nobullet ul { list-style-type: none; }
+footer a { text-decoration: none; }
+
+
+footer div:nth-of-type(1){
+  flex:3;
+}
+footer div:nth-of-type(2){
+  flex:3;
+}
+footer div:nth-of-type(3){
+  flex:3;
+}
+footer a:hover{color:brown;}
+
+/*index.html*/
 .main{
   color:#310303;
 }
@@ -90,34 +123,8 @@ body {
   overflow:auto;
   flex:5;
 }
-h2 {text-align: center;}
 
-footer{margin: 0;
-	padding: 0;}
-footer,footer div{
-  font-size:10px;
-  background-color: #f5fb92;
-  color:brown;
-}
-.nobullet ul { list-style-type: none; }
-footer a { text-decoration: none; }
-
-.wrapper{
-    display:flex;
-    flex-direction: row;
-    background-color: #f5fb92;
-}
-footer div:nth-of-type(1){
-  flex:3;
-}
-footer div:nth-of-type(2){
-  flex:3;
-}
-footer div:nth-of-type(3){
-  flex:3;
-}
-footer a:hover{color:brown;}
-
+/*news.html*/
 .new{
   background-color: #DAC17C;
   flex:5;
@@ -145,30 +152,54 @@ footer a:hover{color:brown;}
 }
 .shopPic{
   flex:5;
+  margin-left:30px;
 }
+
+/*aboutUs.html*/
 .aboutUs{
-  font-size: 80%;
-  overflow:auto;
+  font-size: 100%;
   flex:5;
 }
-details>summary {
-  list-style: none;
+.box{
+  width:40%;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 8px;
+  background-color: #EEDC9A;
+  padding:5px 10px 10px 10px;
+  height:fit-content;
 }
-summary::-webkit-details-marker {
-  display: none
+.box p{
+  font-size:100%;
+  line-height:28px;
 }
-summary::after {
-  content: "↓";
-  color:green;
+#readmorebtn{
+  display:inline-block;
+  color:#fff;
+  background-color: #2196f3;
+  text-decoration: none;
+  padding:10px 15px;
+  border-radius:8px;
+  margin-top: 15px;
+  font-size: 100%;
 }
-summary::content{
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
+
+#readmorebtn button:hover{
+  background-color: #4ba7f3c5;
+  box-shadow: 0 1px 1px 1px #00325a;
 }
-details[open] summary:after {
-  content: "↑";
-  color:red;
+
+#more{
+  display:inline;
 }
+#moretext{
+  display:none;
+}
+#show{
+  display:inline;
+}
+
+/*outlets.html*/
 .outlets{flex:3;}
 .outlets img{
   float:left;
@@ -182,30 +213,33 @@ details[open] summary:after {
   display:inline-block;
   font-size: 80%;
 }
+
+/*product.html*/
 #sorting{
-  flex:5;
   height: auto;
   width: auto;
-  font-size: xx-large;
+  font-size:medium;
   background-color: palegoldenrod;
-  float: left;
-  text-align: justify;
+  flex:50%;
   position: static;
 }
-#sorting span {
+.radio{
   color: black;
-  display: block;
+  display: inline-block;
   padding: 20px;
 }
 #sorting span input{
   background-color: honeydew;
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
   color: white;
 }
 #product {
-  flex:5;
-  width: 55%;
+  display: inline-block;
+  flex: 50%;
+  width: 60%;
+  flex-wrap: wrap;
+  padding-left: 60px;;
 }
 #product img{
   width: 300px;
@@ -216,33 +250,49 @@ details[open] summary:after {
   padding-left: 110px;
 }
 
+/*membership.html*/
+#membership{
+  background: #F9E076;
+  margin: 0 250px;
+}
+#membership ol li{
+  padding-bottom: 45px;
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0px 1px 1px rgb(172, 19, 172);
+}
+#membership img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
+}
 
-
-
+/*different screen size*/
 @media screen and (max-width: 600px){
-  nav div:nth-of-type(1){display:none;}
-  
+  .header{
+    padding:0;
+    background-position-x: 0;
+  }
+  .navbar div:nth-of-type(1){display:none;}
+   main,footer{display:flex;}
   .mobile-container {
     max-width: 480px;
     margin: auto;
-    background-color: #555;
+    background-color: #310303;
     height: 500px;
-    color: white;
+    color: #f2f2f2;
     border-radius: 10px;
   }
   
-  .nav {
+  .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #310303;
     position: relative;
   }
   
-  .nav #myLinks {
-    display: none;
-  }
-  
-  .nav a {
-    color: white;
+  .navbar a {
+    color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 50%;
