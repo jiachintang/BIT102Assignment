@@ -1,10 +1,12 @@
+/*General */
 body {
 	margin: 0;
 	padding: 0;
   background-color: #f5fb92;
   font-family:Arial, Helvetica, sans-serif;
 }
-
+h2 {text-align: center;}
+/* Header*/
 .header{
  margin: 0;
  padding: 20px 20px 0 0;
@@ -23,7 +25,7 @@ body {
   display:flex-end;
   padding-top: 100px;
 }
-
+/*Navigation Bar*/
 .navbar {
   margin: 0;
 	padding: 0;
@@ -74,28 +76,11 @@ body {
   border: none;
 }
 
-.main{
-  color:#310303;
-}
-.recently{
-  background-color: #F3EAAF;
-  width: 50%;
-  overflow:auto;
-  flex:5;
-}
-.categories{
-  background-color: #FAE29C;
-  border: white;
-  width: 50%;
-  overflow:auto;
-  flex:5;
-}
-h2 {text-align: center;}
-
+/*Footer*/
 footer{margin: 0;
 	padding: 0;}
 footer,footer div{
-  font-size:10px;
+  font-size:90%;
   background-color: #f5fb92;
   color:brown;
 }
@@ -118,6 +103,25 @@ footer div:nth-of-type(3){
 }
 footer a:hover{color:brown;}
 
+/*index.html*/
+.main{
+  color:#310303;
+}
+.recently{
+  background-color: #F3EAAF;
+  width: 50%;
+  overflow:auto;
+  flex:5;
+}
+.categories{
+  background-color: #FAE29C;
+  border: white;
+  width: 50%;
+  overflow:auto;
+  flex:5;
+}
+
+/*news.html*/
 .new{
   background-color: #DAC17C;
   flex:5;
@@ -145,13 +149,58 @@ footer a:hover{color:brown;}
 }
 .shopPic{
   flex:5;
+  margin-left:30px;
 }
+
+/*aboutUs.html*/
 .aboutUs{
-  font-size: 80%;
+  font-size: 100%;
   overflow:auto;
   flex:5;
 }
-details>summary {
+.box{
+  width:40%;
+  margin-right: 30px;
+  margin-left: 30px;
+  border-radius: 8px;
+  background-color: #ddd;
+  padding:5px 10px 10px 10px;
+}
+.box p{
+  font-size:100%;
+  line-height:28px;
+}
+.read-more-btn{
+  display:inline-block;
+  color:#fff;
+  background-color: #2196f3;
+  text-decoration: none;
+  padding:10px 15px;
+  border:none;
+  outline:none;
+  border-radius:8px;
+  margin-top: 15px;
+}
+.box button:hover{
+  background-color: #4ba7f3c5;
+  box-shadow: 0 1px 1px 1px #00325a;
+}
+.box .showContent{
+  height:auto;
+}
+/*.read-more-btn{
+  background-color:rgb(134, 0, 34);
+}*/
+.text{
+  font-size: 100%;
+}
+.moretext{
+  display:none;
+}
+.text.show-more .moreText{
+  display:inline;
+}
+/*details>summary {
   list-style: none;
 }
 summary::-webkit-details-marker {
@@ -168,7 +217,9 @@ summary::content{
 details[open] summary:after {
   content: "↑";
   color:red;
-}
+}*/
+
+/*outlets.html*/
 .outlets{flex:3;}
 .outlets img{
   float:left;
