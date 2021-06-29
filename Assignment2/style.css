@@ -234,7 +234,7 @@ footer a:hover{color:brown;}
   color: white;
 }
 #product {
-  display: inline-flex;
+  display: inline;
   flex-direction:row;
   flex: 6;
   width: 60%;
