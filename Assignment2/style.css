@@ -54,7 +54,7 @@ body {
   width:50px;
   overflow: auto;
 }
-.navbar a:hover, button:hover{
+.navbar a:hover, .navbar button:hover{
   background: #CC5801;
   color: #FAE29C;
 }
@@ -66,14 +66,12 @@ body {
 }
 
 .navbar  button {
-  float: right;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
   background: #ddd;
   font-size: 17px;
   border: none;
-  cursor: pointer;
 }
 
 .main{
