@@ -22,7 +22,7 @@ h2 {text-align: center;}
  font-size: 100%;
 }
 .header a{
-  padding-top: 100px;
+  padding-top: 200px;
 }
 /*Navigation Bar*/
 .navbar {
@@ -76,9 +76,6 @@ h2 {text-align: center;}
 
 #search {
   display:inline-block;
-  padding-top:0;
-  position: relative;
-  top: 0;
 }
 /*flex layout*/
 .wrapper{
@@ -202,24 +199,6 @@ footer a:hover{color:brown;}
 #show{
   display:inline;
 }
-/*details>summary {
-  list-style: none;
-}
-summary::-webkit-details-marker {
-  display: none
-}
-summary::after {
-  content: "↓";
-  color:green;
-}
-summary::content{
-  font-weight: bold;
-  font-family:Arial, Helvetica, sans-serif;
-}
-details[open] summary:after {
-  content: "↑";
-  color:red;
-}*/
 
 /*outlets.html*/
 .outlets{flex:3;}
@@ -235,6 +214,8 @@ details[open] summary:after {
   display:inline-block;
   font-size: 80%;
 }
+
+/*product.html*/
 #sorting{
   height: auto;
   width: auto;
@@ -247,7 +228,6 @@ details[open] summary:after {
   color: black;
   display: inline-block;
   padding: 20px;
-  float: left;
 }
 #sorting span input{
   background-color: honeydew;
@@ -271,6 +251,8 @@ details[open] summary:after {
 #select{
   padding-left: 110px;
 }
+
+/*membership.html*/
 #membership{
   background: #F9E076;
   margin: 0 250px;
@@ -287,9 +269,15 @@ details[open] summary:after {
   margin-right: auto;
   width: 100%; 
 }
+
+/*different screen size*/
 @media screen and (max-width: 600px){
+  .header{
+    padding:0;
+    background-position-x: 0;
+  }
   .navbar div:nth-of-type(1){display:none;}
-  
+   main,footer{display:flex;}
   .mobile-container {
     max-width: 480px;
     margin: auto;
@@ -301,12 +289,12 @@ details[open] summary:after {
   
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #310303;
     position: relative;
   }
   
   .navbar a {
-    color: white;
+    color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 50%;
