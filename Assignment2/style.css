@@ -218,9 +218,9 @@ footer a:hover{color:brown;}
 #sorting{
   height: auto;
   width: auto;
-  font-size: xx-large;
+  font-size:medium;
   background-color: palegoldenrod;
-  float: left;
+  flex:50%;
   position: static;
 }
 .radio{
@@ -230,14 +230,13 @@ footer a:hover{color:brown;}
 }
 #sorting span input{
   background-color: honeydew;
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
   color: white;
 }
 #product {
-  display: inline;
-  flex-direction:row;
-  flex: 6;
+  display: inline-block;
+  flex: 50%;
   width: 60%;
   flex-wrap: wrap;
   padding-left: 60px;;
