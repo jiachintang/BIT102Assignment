@@ -234,19 +234,18 @@ details[open] summary:after {
   font-size: 80%;
 }
 #sorting{
-  flex:5;
   height: auto;
   width: auto;
   font-size: xx-large;
   background-color: palegoldenrod;
   float: left;
-  text-align: justify;
   position: static;
 }
-#sorting span {
+.radio{
   color: black;
-  display: block;
+  display: inline-block;
   padding: 20px;
+  float: left;
 }
 #sorting span input{
   background-color: honeydew;
@@ -255,8 +254,12 @@ details[open] summary:after {
   color: white;
 }
 #product {
-  flex:5;
-  width: 55%;
+  display: inline-flex;
+  flex-direction:row;
+  flex: 6;
+  width: 60%;
+  flex-wrap: wrap;
+  padding-left: 60px;;
 }
 #product img{
   width: 300px;
@@ -265,6 +268,22 @@ details[open] summary:after {
 }
 #select{
   padding-left: 110px;
+}
+#membership{
+  background: #F9E076;
+  margin: 0 250px;
+}
+#membership ol li{
+  padding-bottom: 45px;
+  font-size: large;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0px 1px 1px rgb(172, 19, 172);
+}
+#membership img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; 
 }
 @media screen and (max-width: 600px){
   nav div:nth-of-type(1){display:none;}
