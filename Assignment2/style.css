@@ -169,14 +169,14 @@ footer a:hover{color:brown;}
   margin-right: 30px;
   margin-left: 30px;
   border-radius: 8px;
-  background-color: #ddd;
+  background-color: #EEDC9A;
   padding:5px 10px 10px 10px;
 }
 .box p{
   font-size:100%;
   line-height:28px;
 }
-.read-more-btn{
+#readmorebtn{
   display:inline-block;
   color:#fff;
   background-color: #2196f3;
@@ -187,23 +187,19 @@ footer a:hover{color:brown;}
   border-radius:8px;
   margin-top: 15px;
 }
-.box button:hover{
+
+#readmorebtn button:hover{
   background-color: #4ba7f3c5;
   box-shadow: 0 1px 1px 1px #00325a;
 }
-.box .showContent{
-  height:auto;
+
+#more{
+  display:inline;
 }
-/*.read-more-btn{
-  background-color:rgb(134, 0, 34);
-}*/
-.text{
-  font-size: 100%;
-}
-.moretext{
+#moretext{
   display:none;
 }
-.text.show-more .moreText{
+#show{
   display:inline;
 }
 /*details>summary {

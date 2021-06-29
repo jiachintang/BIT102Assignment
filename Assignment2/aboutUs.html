@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="icon.ico" type="image" sizes="16x16">
-        
+        <script src="readmore.js"></script>
         
     </head>
 
@@ -23,14 +23,14 @@
       <div class="wrapper">
        <div class="shopPic">
         <img src="https://app.moonlightcake.com/media/location/Puchong.jpg" 
-        alt="Moonlight Cake House Outlet" width="100%" height="100%">
+        alt="Moonlight Cake House Outlet" width="600px" height="500px">
        </div>
        <div class="aboutUs box" >
-          <p class="text">Moonlight group consists of Moonlight Cake House Sdn. Bhd. (MCHSB) 
+          <p id="text">Moonlight group consists of Moonlight Cake House Sdn. Bhd. (MCHSB) 
             involved in producing, marketing and retailing varieties of cakes and pastries; Moonlight Cafe Sdn. Bhd. (MCSB) involved in provision of local and western food and beverage for dine in customers; 
             and Moonlight Manufacturing Sdn. Bhd. (MMSB) involved in sourcing of materials, manufacturing, 
-            processing and packing of all kinds of materials supplied to the above 2 companies.
-        <span class= "moretext"><br>&emsp; In year 2007, Moonlight started their business as MCHSB located at Taman Gaya principally involved in marketing and retailing 
+            processing and packing of all kinds of materials supplied to the above 2 companies.<span id=more>......</span>
+        <span id= "moretext"><br>&emsp; In year 2007, Moonlight started their business as MCHSB located at Taman Gaya principally involved in marketing and retailing 
             varieties of cakes and pastries, subsequently in year 2010, the MCSB was set up to provide cakes, pastries, local and western food and 
             beverage for dine in customers. 
             As the turnover continue to grow tremendously, in year 2012 the MMSB was set up with own factory located at Tampoi, Johor Bahru 
@@ -47,8 +47,8 @@
             <br><br>
             Thank you for visiting our Website, we hope to meet you soon!
         </span>
-            <button class="read-more-btn">Read More</button>
-            <script src="readmore.js"></script>
+            <button onclick="readmore()" id="readmorebtn">Read More</button>
+            
        </div>
       </div>
       </main>
