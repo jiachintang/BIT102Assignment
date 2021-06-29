@@ -6,7 +6,7 @@ function readmore() {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      readmorebtn.innerHTML = "Read more";
+      readmorebtn.innerHTML =("Read More" + '<i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>');
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
