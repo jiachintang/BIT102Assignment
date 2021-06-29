@@ -22,7 +22,6 @@ h2 {text-align: center;}
  font-size: 100%;
 }
 .header a{
-  display:flex-end;
   padding-top: 100px;
 }
 /*Navigation Bar*/
@@ -33,7 +32,6 @@ h2 {text-align: center;}
   overflow: auto;
   float: none;
   background-color: #310303;
-  margin-top:150;
   width: 100%; 
   top: 0;
 }
