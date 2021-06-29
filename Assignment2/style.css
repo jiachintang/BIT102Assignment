@@ -78,13 +78,13 @@ body {
   color:#310303;
 }
 .recently{
-  background-color: aquamarine;
+  background-color: #F3EAAF;
   width: 50%;
   overflow:auto;
   flex:5;
 }
 .categories{
-  background-color: rosybrown;
+  background-color: #FAE29C;
   border: white;
   width: 50%;
   overflow:auto;
