@@ -18,7 +18,6 @@ h2 {text-align: center;}
  background-repeat: no-repeat;
  background-size: 70%;
  height: 110px;
- color:transparent;
  font-size: 100%;
 }
 .header img{
@@ -38,7 +37,7 @@ h2 {text-align: center;}
   width: 100%; 
   top: 0;
 }
-.navbar #mobileNav{
+.navbar span #mobileNav{
   display:none;
 }
 .navbar #desktop{
