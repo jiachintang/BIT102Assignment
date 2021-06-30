@@ -54,6 +54,8 @@ h2 {text-align: center;}
   width:50px;
   overflow: auto;
 }
+
+.navbar a:visited{color: #fcae1e;}
 .navbar a:hover, .navbar button:hover{
   background: #CC5801;
   color: #FAE29C;
