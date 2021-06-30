@@ -23,7 +23,10 @@ h2 {text-align: center;}
 }
 .header img{
   padding-top: 15px;
+  float: right;
   position: relative;
+  width: 50px;
+  height:50px;
 }
 /*Navigation Bar*/
 .navbar {
@@ -31,25 +34,35 @@ h2 {text-align: center;}
 	padding: 0;
   position: sticky;
   overflow: auto;
-  float: none;
   background-color: #310303;
   width: 100%; 
   top: 0;
 }
 
+
 .navbar a{
   display:inline-block;
-  color: #f2f2f2;
   text-align: left;
   text-decoration: none;
 }
-.navbar span:nth-of-type(1) a {
-  float:left;
+.navbar ul{
+  display: flex;
+  margin:0;
+  padding:0;
+  justify-content: left;
+  list-style-type: none;
+  position: relative;
+  
+}
+.navbar ul li a{
   padding: 18px 14px 18px 14px;
+  color: #f2f2f2;
 }
-.navbar span:nth-of-type(2){
-  float:right;
+.navbar span{
+  display:flex;
+  margin-left: 20px;
 }
+
 .navbar span img{
   height: 50px;
   width:50px;
@@ -57,9 +70,10 @@ h2 {text-align: center;}
 }
 
 .navbar a:visited{color: #fcae1e;}
-.navbar a:hover, .navbar button:hover{
-  background: #CC5801;
+.navbar ul li a:hover, .navbar ul span a:hover,.navbar button:hover{
+  background-color: #CC5801;
   color: #FAE29C;
+  transition: 0.1ms;
 }
 .navbar input[type=text] {
   padding: 6px;
@@ -70,16 +84,10 @@ h2 {text-align: center;}
 
 .navbar  button {
   padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
+  margin-top: 8px 0 0 0;
   background: #ddd;
   font-size: 17px;
   border: none;
-}
-
-#search {
-  display:inline-block;
-  padding-left: 10px;
 }
 /*flex layout*/
 .wrapper{
@@ -288,14 +296,29 @@ footer a:hover{color:brown;}
 }
 
 /*different screen size*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   .header{
     padding:0;
     background-position-x: 10px;
   }
-  .navbar span:nth-of-type(1) a{
-    display:block;
-    border-bottom: 2px #fcae1e;
+  .navbar ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar ul li {
+    border-bottom: 2px solid #80400B;
+  }
+  .navbar span{
+    display:flex;
+    padding-left:70%;
+  }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
   }
 
   .recently img, .categories img{
