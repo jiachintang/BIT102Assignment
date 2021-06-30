@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html> 
+<html lang="en"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="pic/icon.ico" type="image" sizes="16x16">
+        <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
     </head>
 
     <body>
@@ -17,59 +17,67 @@
         Moonlight Cake House
         <a href="https://www.facebook.com/MoonlightCakeHouse/">
           <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" 
-          alt="facebook" width="50px" height="50px" style="float:right";>
+          alt="facebook" >
         </a>
         
         <a href="https://www.instagram.com/moonlightcakehouse/">
           <img src="https://icons-for-free.com/iconfiles/png/512/colored+gradient+instagram+media+social+social+media+icon-1320192520147384507.png" 
-          alt="Instagram" width="50px" height="50px" style="float: right;";>
+          alt="Instagram">
         </a>
       </header>
       
       <nav class="navbar">
+          <div id="mobileNav">
+            <ul>
+            <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li> <a href="outlets.html">Outlets</a></li>
+            <li><a href="TnC.html">Terms and Conditions</a></li>
+            <li><form action="https://webdevbasics.net/scripts/demo.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            </li>
+            </ul>
+          </div>
+          </span>
+        </div>
         <span>
-          <a href="index.html">Home</a>
-          <a href="product.html">Product</a>
-          <a href="membership.html">Membership</a>
-          <a href="feedback.html">Feedback</a>
-          <a href="news.html">News</a>
-          <a href="aboutUs.html">About Us</a>
-          <a href="outlets.html">Outlets</a>
-          <a href="TnC.html">Terms and Conditions</a>
-          
-        </span>
-        <form action="https://webdevbasics.net/scripts/demo.php " id="search">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <span>
-          <a href="register.html"><img src= "pic/register.png"></a> 
+          <a href="register.html"><img src= "pic/register.png"></a>
           <a href="login.html"><img src= "pic/login.png"></a>
           <a href="shoppingcart.html"><img src= "pic/cart.png"></a>
-        
         </span>
+        </ul>
+        
       </nav>
       
       <main class="main">
         <div class="wrapper">
           <div class="recently">
             <h2>Recently Viewed</h2>
-            <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_sklDIC1.png" alt="Chocolate cake" ></a>
+            <a href="product.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_DBkzIGW.png" alt="Chocolate cake"></a>
             <label>Chocolate Cake</label>
-            <a href=""><img src="https://app.moonlightcake.com/media/product/45/freshdurian.png" alt="Durian cake" ></a>
-            <label>Durian Cake<label>
-            <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_sklDIC1.png" alt="Strawberry cake" ></a>
+            <a href="product.html"><img src="https://app.moonlightcake.com/media/product/45/freshdurian.png" alt="Durian cake" ></a>
+            <label>Durian Cake</label>
+            <a href="product.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_sklDIC1.png" alt="Strawberry cake"></a>
             <label>Strawberry Cake</label>
         </div>
         <div class ="categories">
           <h2>Shop by Categories</h2>
-          <a href=""><img src="https://app.moonlightcake.com/media/category/45/belgu.png" alt="Chocolate $ coffe cake"></a>
-          <label>Chocolate Cake</label>
-          <a href=""><img src="https://app.moonlightcake.com/media/category/45/Untitled.png" alt="5 inch cake"></a>
+          <a href="product.html"><img src="https://app.moonlightcake.com/media/category/45/belgu.png" alt="Chocolate $ coffe cake"></a>
+          <label>Chocolate / Coffee Cake</label>
+          <a href="product.html"><img src="https://app.moonlightcake.com/media/category/45/Untitled.png" alt="5 inch cake"></a>
           <label>5 inch cake</label>
-          <a href=""><img src="https://app.moonlightcake.com/media/category/45/redarome_s.png" alt="Festival"></a>
+          <a href="product.html"><img src="https://app.moonlightcake.com/media/category/45/redarome_s.png" alt="Festival"></a>
           <label>Festival</label>
-          <a href=""><img src="https://app.moonlightcake.com/media/category/45/f755_s.png" alt="Fondant Cake Series"></a>
+          <a href="product.html"><img src="https://app.moonlightcake.com/media/category/45/f755_s.png" alt="Fondant Cake Series"></a>
           <label>Fondant Cake Series</label>
           
         </div>
@@ -77,9 +85,10 @@
       </main>
     
     <footer class="clear">
-      <div class="wrapper">
-      <div>
+      <div class="wrapper" id="mobile">
         <img src="pic/footer.png" width="80%" height="80%">
+        <br>
+        <span>Copyright &copy;2016-2021 Moonlight Cake House Sdn Bhd (862725-U)</span>
       </div>
       <div class="nobullet">
         <ul>
@@ -94,7 +103,7 @@
           <li><a href="outlets.html">Outlets</a></li>
           <li><a href="shoppingcart.html">Shopping cart</a></li>
           <li><a href="TnC.html">Terms and Conditions</a></li>
-          <p>Copyright &copy;2016-2021 Moonlight Cake House Sdn Bhd (862725-U)</p>
+          
       </ul>
       </div>
       <div>
@@ -102,10 +111,12 @@
       <label>Email:</label>
       <a href=" mailto:info@moonlightcake.com">info@moonlightcake.com</a>
       <h4>Phone:</h4>
-      <p>Moonlight Cake House Sdn. Bhd.<br></p>
-      <a href="tel:+607-558 9292">+607-558 9292</a>
-      <p>Taman Sutera Utama (Headoffice)<br><p>
-      <a href="tel:+607-558 3322">+607-558 3322</a>
+      <p>Moonlight Cake House Sdn. Bhd.(Office)<br></p>
+      <a href="tel:+607-558 9292" id="mobile">+607-558 9292</a>
+      <span id="desktop">+607-558 9292</span>
+      <p>Taman Sutera Utama (Head quarter)<br><p>
+      <a href="tel:+607-558 3322" id="mobile">+607-558 3322</a>
+      <span id="desktop">+607-558 3322</span>
       </div>
     </div>
     </footer>
