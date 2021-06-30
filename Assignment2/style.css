@@ -37,9 +37,7 @@ h2 {text-align: center;}
   width: 100%; 
   top: 0;
 }
-.navbar div span #mobileNav{
-  display:none;
-}
+
 .navbar #desktop{
   display:flex;
 }
@@ -65,8 +63,8 @@ h2 {text-align: center;}
   padding: 18px 14px 18px 14px;
   color: #f2f2f2;
 }
-.navbar span{
-  display:flex;
+.navbar span#mobileNav{
+  display:none;
 }
 
 .navbar span img{
@@ -307,9 +305,9 @@ footer a:hover{color:brown;}
     padding:0;
     background-position-x: 10px;
   }
-  .navbar #mobileNav{
+  .navbar span#mobileNav{
     display:block;
-    position:relative;
+    float:right;
   }
   .navbar a.icon {
     background: black;
@@ -338,7 +336,7 @@ footer a:hover{color:brown;}
 
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #310303;
     position: relative;
   }
 
