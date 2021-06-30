@@ -38,6 +38,12 @@ h2 {text-align: center;}
   width: 100%; 
   top: 0;
 }
+.navbar #mobileNav{
+  display:none;
+}
+.navbar #desktop{
+  display:flex;
+}
 .navbar a.icon{
   display:none;
 }
@@ -62,7 +68,6 @@ h2 {text-align: center;}
 }
 .navbar span{
   display:flex;
-  margin-left: 20px;
 }
 
 .navbar span img{
@@ -303,7 +308,8 @@ footer a:hover{color:brown;}
     padding:0;
     background-position-x: 10px;
   }
-  .navbar{
+  .navbar #mobileNav{
+    display:block;
     position:relative;
   }
   .navbar a.icon {
@@ -318,9 +324,7 @@ footer a:hover{color:brown;}
     background-color: #CC5801;
     color: #FAE29C;
   }
-  .navbar span #mobile{
-    display:block;
-  }
+  
   .navbar ul{
     flex-direction: column;
     text-align: center;
@@ -330,7 +334,6 @@ footer a:hover{color:brown;}
   }
   .navbar span{
     display:flex;
-    padding-left:70%;
   }
   .mobile-container {
     max-width: 480px;
