@@ -52,7 +52,7 @@ h1 {
     text-align: justify;
 }
 
-h2{
+.title h2{
     color: white;
     background-color: brown;
     line-height: 50px;
