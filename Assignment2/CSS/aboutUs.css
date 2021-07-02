@@ -73,4 +73,49 @@ main h2{
     width:fit-content;
     height:fit-content;
   }
+<<<<<<< HEAD
+  .box p{
+    font-size:100%;
+    line-height:28px;
+  }
+  #readmorebtn{
+    display:inline-block;
+    color:#fff;
+    background-color: #2196f3;
+    text-decoration: none;
+    padding:10px 15px;
+    border-radius:8px;
+    margin-top: 15px;
+    font-size: 100%;
+  }
+  
+  #readmorebtn:hover{
+    box-shadow: 0 1px 1px 1px #00325a;
+  }
+
+  #more{
+    display:inline;
+  }
+  #moretext{
+    display:none;
+  }
+  #show{
+    display:inline;
+  }
+  
+  /*outlets.html*/
+  .outlets{flex:3;}
+  .outlets img{
+    float:left;
+    display:block;
+    padding: 0px 5px 5px 5px;
+    width:200px;
+    height: 200px;
+    overflow: auto;
+  }
+  .outlets label a{
+    display:inline-block;
+    font-size: 80%;
+=======
+>>>>>>> 08556cbd898b1cb57c3a90f9911203b3dcf284ff
   }

@@ -18,3 +18,12 @@
 body>h2{
   text-align: center;
 }
+@media screen and (max-width: 768px){
+  #membership{
+    width: 100%;
+    margin: 0 0px;
+  }
+  #membership img{
+    size: 50%;
+  }
+}
