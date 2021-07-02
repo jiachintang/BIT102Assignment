@@ -32,7 +32,7 @@ body {
   
 /* Navigation Bar Styling Start*/
 .navbar{
-    background-color: #684444;
+    background-color: #2A2623;
     display: flex; /*split navi bar into 2 flex*/
     flex-wrap: wrap;
     justify-content: space-between;
@@ -98,7 +98,7 @@ body {
   
 /*Footer Styling Start*/
 footer{
-    background-color: #684444;
+    background-color: #2A2623;
     padding: 2rem 0 4rem 0;
 }
 .footer-container{
@@ -107,7 +107,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 80%;
-    background-color: #684444;
+    background-color: #2A2623;
     color: white;
     margin: 0 auto;
 }
@@ -135,7 +135,7 @@ footer{
     line-height: 0px;
 }
 .footer-heading a{
-    color: white;
+    color: #C19D77;
     text-decoration: none;
     margin-bottom: 0.5rem;
     display: flex;
@@ -189,8 +189,11 @@ footer{
       display: none;
     }
     .mainNav a.icon {
+    margin: 0;
       float: left;
       display: block;
+      height: 100%;
+      width: 50px;
     }
   
     /*Styling for after hamburger icon is clicked*/
