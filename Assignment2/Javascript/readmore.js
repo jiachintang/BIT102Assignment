@@ -1,4 +1,3 @@
-
 function readmore() {
     var dots = document.getElementById("more");
     var moreText = document.getElementById("moretext");
