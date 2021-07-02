@@ -16,7 +16,7 @@
 }
 .shopPic img{
   width:100%; 
-  height:400px;
+  height:auto;
 }
 
 .box{
@@ -31,6 +31,7 @@
 .box p{
   font-size:100%;
   line-height:28px;
+  text-align: justify;
 }
 #readmorebtn{
   display:inline-block;
