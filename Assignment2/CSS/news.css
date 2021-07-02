@@ -24,8 +24,13 @@
   .clear{
     clear: both;
   }
-  .shopPic{
-    flex:5;
-    margin-left:30px;
+
+  @media screen and (max-width: 768px){
+    #mobile{
+      display:block;
+    }
+    #desktop{
+      display:none;
+    }
   }
   

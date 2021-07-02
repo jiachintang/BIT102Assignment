@@ -1,3 +1,36 @@
-.outlets label{
-    display:block;
+/*flex layout*/
+.wrapper{
+    display:flex;
+    flex-direction: row;
+    background-color: #f5fb92;
+  }
+.outlets{
+    flex:3;
 }
+.outlets label, .outlets a{
+    display:block;
+    padding-left: 10px;
+}
+.outlets span{
+    display:inline;
+    padding-left: 10px;
+}
+.outlets img{
+    height:200px;
+    width:300px;
+    display:flex;
+    padding: 5px 5px;
+}
+
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        flex-direction: column;
+      }
+    #mobile{
+      display:block;
+    }
+    #desktop{
+      display:none;
+    }
+  }
