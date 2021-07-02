@@ -1,0 +1,31 @@
+/*news.html*/
+.new{
+    background-color: #DAC17C;
+    flex:5;
+  }
+  .news{
+    background-color:#EEDC9A;
+    flex:5;
+  }
+  
+  .new img, .news img{
+    float:left;
+    display:block;
+    padding-right: 10px;
+    width:200px;
+    height: 200px;
+    overflow: auto;
+  }
+  .new li, .news li{
+   display:inline-block;
+   overflow: auto;
+   text-align: left;
+  }
+  .clear{
+    clear: both;
+  }
+  .shopPic{
+    flex:5;
+    margin-left:30px;
+  }
+  

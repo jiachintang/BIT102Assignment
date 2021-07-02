@@ -1,0 +1,60 @@
+.aboutUs{
+    font-size: 100%;
+    flex:5;
+  }
+
+  .shopPic{
+    padding-left: 30px;
+  }
+  .box{
+    width:40%;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background-color: #EEDC9A;
+    padding:5px 10px 10px 10px;
+    height:fit-content;
+  }
+  .box p{
+    font-size:100%;
+    line-height:28px;
+  }
+  #readmorebtn{
+    display:inline-block;
+    color:#fff;
+    background-color: #2196f3;
+    text-decoration: none;
+    padding:10px 15px;
+    border-radius:8px;
+    margin-top: 15px;
+    font-size: 100%;
+  }
+  
+  #readmorebtn:hover{
+    box-shadow: 0 1px 1px 1px #00325a;
+  }
+  
+  #more{
+    display:inline;
+  }
+  #moretext{
+    display:none;
+  }
+  #show{
+    display:inline;
+  }
+  
+  /*outlets.html*/
+  .outlets{flex:3;}
+  .outlets img{
+    float:left;
+    display:block;
+    padding: 0px 5px 5px 5px;
+    width:200px;
+    height: 200px;
+    overflow: auto;
+  }
+  .outlets label a{
+    display:inline-block;
+    font-size: 80%;
+  }

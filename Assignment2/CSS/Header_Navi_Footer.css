@@ -1,0 +1,239 @@
+/* ~~~~~~~~~~~~~~~~COMMON STYLING START (header&footer)~~~~~~~~~~~~~~~~ */
+*{
+    box-sizing: border-box;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+  
+  /* Header Styling Start */
+.header{
+    background-color: #f5fb92;
+    background-image: url("../pic/Header.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 110px;
+    height: 15vh;
+}
+.header img{
+    margin: 5px 5px 0 0;
+    width: 4%;
+    height: auto;
+    min-width: 30px;
+    max-width: 45px;
+    float: right;
+    position: relative;
+}
+/* Header Styling End */
+  
+/* Navigation Bar Styling Start*/
+.navbar{
+    background-color: #684444;
+    display: flex; /*split navi bar into 2 flex*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0; /*whats this for*/
+    padding: 0; /*whats this for*/
+    overflow: auto; /*whats this for*/
+    width: 100%; /*whats this for*/
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+.mainNav {
+    overflow: hidden;
+    display: flex; /*within mavi split anchor into flex*/
+    flex-wrap:wrap;
+}
+.mainNav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s; 
+    display:flex; /*make content inside anchor flex*/
+    align-items:center; /*vertical align*/
+    justify-content:left; /*horizontal align*/
+}
+.active {
+    background-color: #CC5801;
+    color: white;
+}
+.mainNav .icon { /*icon doesnt display on large window*/
+    display: none;
+}
+.mainNav a:hover{
+    background-color: #cc590156;
+    color: white;
+    transition: 0.1ms;
+}
+.miscNav, .miscNav a{/*overall miscNav and anchor tags inside*/
+    display:flex; 
+    align-items:center; /*vertical align*/
+    justify-content:left; /*horizontal align*/
+}
+
+/*for search bar and 3 icons*/
+.miscNav input[type=text] { /*Search Bar*/
+    font-size: 17px;
+    width: 175px;
+    height: 30px;
+}
+.miscNav  button { /*Search Icon*/
+    background: #ddd;
+    font-size: 17px;
+    margin-right: 10px;
+    height: 30px;
+}
+.miscNav a img{/*3 Icons*/
+    width: 45px;
+    height: 45px;
+}
+/* Navigation Bar Styling End*/
+  
+/*Footer Styling Start*/
+footer{
+    background-color: #684444;
+    padding: 2rem 0 4rem 0;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: #684444;
+    color: white;
+    margin: 0 auto;
+}
+  
+.footer-heading{
+    display: flex;
+    flex-direction: column;
+}
+  
+.footer-1{
+    flex: 18%;
+}
+.footer-2{
+    flex: 32%;
+}
+.footer-3{
+    flex: 25%;
+}
+.footer-4{
+    flex: 25%;
+}
+  
+.footer-heading h2{
+    margin-bottom: 2rem;
+    line-height: 0px;
+}
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.footer-heading a:hover{
+    color: red;
+    transition: 0.3s ease-out;
+}
+  
+.icon{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.icon-ins{
+    background-image: url(../pic/insta_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.icon-fb{
+    background-image: url(../pic/fb_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.footer-4 img{
+    width: 160px;
+    height: 50px;
+}
+  
+.endfooter p{
+    text-align: center;
+    color: white;
+}
+  /*Footer Styling End*/
+  /* ~~~~~~~~~~~~~~~~COMMON STYLING END~~~~~~~~~~~~~~~~ */
+  
+  
+  
+  
+  /* ~~~~~~~~~~~~~~~~RESPONSIVE SIZES START~~~~~~~~~~~~~~~~ */
+  /*Siwtch to Hamburger Menu*/
+  @media screen and (max-width: 1240px) {
+    /* Navigation Bar Styling Start */
+    /*Styling before hamburger icon is clicked*/
+    .mainNav a:not(.active){
+      display: none;
+    }
+    .mainNav a.icon {
+      float: left;
+      display: block;
+    }
+  
+    /*Styling for after hamburger icon is clicked*/
+    .mainNav.hamburger a.icon {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .mainNav.hamburger a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .mainNav.hamburger{
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+    }
+    .miscNav.hamburger{
+      display: none;
+    }
+  
+    .appGroup{
+      display: flex;
+      flex-direction: row;
+    }
+    /* Navigation Bar Styling End */
+  }
+  
+  /* Switch to mobile view */
+  @media screen and (max-width: 700px) {
+    .footer-heading{ /*change to one column view*/
+      flex: 100%;
+    }
+  
+    .footer-3{ /*remove Find Us On*/
+      display: none;
+    }
+  
+    .footer-4 img{
+      width: 25vw;
+      height: 8vw;
+    }
+  }
