@@ -4,27 +4,26 @@
 }
 
 body, html {
-    height: 100%;
     margin: 0;
+    background-color:#F5FB92;
 }
 
 
-.bg-1, .bg-2, .bg-3 {
-    opacity: 0.65;
+.bg-1, .bg-2{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .bg-1{
-    background-image: url(../pic/strawberry.png); /*rmb to change the picture*/
-    height: 40%;
+    background-image: url(../pic/strawberry.png); 
+    height: 40vh;
 }
 
 .bg-2{
-    background-image: url(../pic/PandanMachaCheese.png); /*rmb to change the picture*/
-    height: 40%;
+    background-image: url(../pic/PandanMachaCheese.png); 
+    height: 40vh;
 }
 
 h1 {
@@ -37,7 +36,7 @@ h1 {
 
 .title{
     display: flex;
-    position: relative;
+    position:static;
     left: 0;
     top: 0%;
     width: 100%;
@@ -46,21 +45,20 @@ h1 {
 
 
 .webSection, .mobileSection{
-    background-color:white;
+    background-color:#f6fb92;
     width: 80%;
     margin: auto;
     text-align: justify;
 }
 
 .title h2{
-    color: white;
-    background-color: brown;
+    color: #C19D77;
+    background-color: #2A2623;
     line-height: 50px;
     margin: auto;
     text-align: center;
     letter-spacing: 4px;
     align-content: center;
-    font-weight: normal;
     padding: 0 25px;
 }
 
