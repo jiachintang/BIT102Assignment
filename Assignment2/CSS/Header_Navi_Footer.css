@@ -12,7 +12,7 @@
   /* Header Styling Start */
   .header{
     background-color: #f5fb92;
-    background-image: url("pic/Header.png");
+    background-image: url("../pic/Header.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -151,13 +151,13 @@
   }
   
   .icon-ins{
-    background-image: url(pic/insta_icon.png);
+    background-image: url(../pic/insta_icon.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
   
   .icon-fb{
-    background-image: url(pic/fb_icon.png);
+    background-image: url(../pic/fb_icon.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
