@@ -1,4 +1,9 @@
-/*news.html*/
+.wrapper{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f5fb92;
+}
 .new{
     background-color: #DAC17C;
     flex:5;
@@ -25,12 +30,9 @@
     clear: both;
   }
 
-  @media screen and (max-width: 768px){
-    #mobile{
-      display:block;
-    }
-    #desktop{
-      display:none;
-    }
+ @media screen and (max-width: 768px){
+  .wrapper{
+    flex-direction: column;
+  }
   }
   
