@@ -4,7 +4,8 @@
   }
 
   .shopPic{
-    padding-left: 30px;
+    flex:5;
+    margin-left:30px;
   }
   .box{
     width:40%;
