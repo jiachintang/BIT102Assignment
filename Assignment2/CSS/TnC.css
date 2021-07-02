@@ -5,7 +5,7 @@
 
 body, html {
     margin: 0;
-    background-color:#F5FB92;
+    background-color:#ecdeb7;
 }
 
 
@@ -45,7 +45,7 @@ h1 {
 
 
 .webSection, .mobileSection{
-    background-color:#f6fb92;
+    background-color:#ecdeb7;
     width: 80%;
     margin: auto;
     text-align: justify;
@@ -53,7 +53,7 @@ h1 {
 
 .title h2{
     color: white;
-    background-color: #CC5801;
+    background-color: #c77536;
     line-height: 50px;
     margin: auto;
     text-align: center;
