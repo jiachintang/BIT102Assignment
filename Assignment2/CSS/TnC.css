@@ -18,12 +18,12 @@ body, html {
 }
 
 .bg-1{
-    background-image: url(pic/WhatsApp_Image_2018-12-28_at_17.29.02.jpeg);
+    background-image: url(../pic/strawberry.png); /*rmb to change the picture*/
     height: 40%;
 }
 
 .bg-2{
-    background-image: url(pic/Untitled_sklDIC1.png);
+    background-image: url(../pic/PandanMachaCheese.png); /*rmb to change the picture*/
     height: 40%;
 }
 
