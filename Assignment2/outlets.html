@@ -4,51 +4,56 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Moonlight Cake House Outlets</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="CSS/style.css">
+        
+        <title>Moonlight Cake House Outlets</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="pic/icon.ico" type="image" sizes="16x16">
+        <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
         <link rel="stylesheet" href="CSS/outlets.css">
-        <link rel="icon" href="icon.ico" type="image" sizes="16x16">
+
+        <script src="Javascript/Header_Navi_Footer.js"></script>
     </head>
 
     <body>
       <header class="header">
-        Moonlight Cake House
+        <!-- Facebook Icon -->
         <a href="https://www.facebook.com/MoonlightCakeHouse/">
-          <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" 
-          alt="facebook" width="50px" height="50px" style="float:right";>
+            <img src="pic/fb_icon.png" alt="Facebook">
         </a>
-        
+        <!-- Instagram Icon -->
         <a href="https://www.instagram.com/moonlightcakehouse/">
-          <img src="https://icons-for-free.com/iconfiles/png/512/colored+gradient+instagram+media+social+social+media+icon-1320192520147384507.png" 
-          alt="Instagram" width="50px" height="50px" style="float: right;";>
+            <img src="pic/insta_icon.png" alt="Instagram">
         </a>
-      </header>
+    </header>
       
-      <nav class="navbar">
-        <span>
-          <a href="index.html">Home</a>
+    <nav class="navbar" id="navbarJS">
+      <!-- Main part of navi bar, will convert to hamburger menu -->
+      <div class="mainNav" id="mainNavJS">
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i class="fa fa-bars"></i></a>
+          <a href="index.html">Home</a> <!--Active Class change to whichever page you are on-->
           <a href="product.html">Product</a>
           <a href="membership.html">Membership</a>
-          <a href="feedback.html">Feedback</a>
+          <a href="feedback.html">Feedback</a> 
           <a href="news.html">News</a>
           <a href="aboutUs.html">About Us</a>
-          <a href="outlets.html">Outlets</a>
+          <a href="outlets.html" class="active">Outlets</a>
           <a href="TnC.html">Terms and Conditions</a>
-          
-        </span>
-        <form action="https://webdevbasics.net/scripts/demo.php " id="search">
-          <input type="text" placeholder="Search.." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <span>
+      </div>
+
+      <!-- Secondary part of navi bar Search Bar and 3 Icons  -->
+      <div class="miscNav" id="miscNavJS">
+          <form action="https://webdevbasics.net/scripts/demo.php " id="search">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
           <a href="register.html"><img src= "pic/register.png"></a> 
           <a href="login.html"><img src= "pic/login.png"></a>
-          <a href="shoppingcart.html"><img src= "pic/cart.png"></a>
-        
-        </span>
-      </nav>
+          <a href="cart.html"><img src= "pic/cart.png"></a>
+      </div>
+  </nav>
       <main>
         <div class="main">
           <h2>Moonlight Cake House Outlets</h2>
@@ -134,39 +139,52 @@
           </div>
         </div>
       </main>
-      <footer class="clear">
-        <div class="wrapper">
-        <div>
-          <img src="footer.png" width="80%" height="80%">
-          <p>Copyright &copy;2016-2021 Moonlight Cake House Sdn Bhd (862725-U)</p>
+      <footer>
+        <div class="footer-container">
+            <div class="footer-heading footer-1">
+                <h2>Site Links</h2>
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="membership.html">Membership</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="news.html">News</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="outlets.html">Outlets</a>
+                <a href="TnC.html">Terms and Conditions</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="mailto:info@moonlightcake.com">info@moonlightcake.com</a>
+                <p><a href="tel:+607-558 9292">+607-558 9292</a>
+                Moonlight Cake House Sdn. Bhd.(Office)</p>
+                <p><a href="tel:+607-558 3322">+607-558 3322</a>
+                Taman Sutera Utama (Head Quarter)</p>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Find Us On</h2>
+                <a href="https://www.instagram.com/moonlightcakehouse/">
+                    <div class="icon icon-ins"></div>
+                    @moonlightcakehouse
+                </a>
+                <a href="ttps://www.facebook.com/MoonlightCakeHouse/">
+                    <div class="icon icon-fb"></div>
+                    Moonlight Cake House
+                </a>
+            </div>
+            <div class="footer-heading footer-4">
+                <h2>Download Our App</h2>
+                <div class="appGroup">
+                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img src="pic/playstore.png" alt="Download Our App"></a>
+                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img src="pic/App-Store.png" alt="Download Our App"></a>
+                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png" alt="Download Our App"></a>
+                </div>
+            </div>
         </div>
-        <div class="nobullet">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="membership.html">Membership</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="outlets.html">Outlets</a></li>
-            <li><a href="shoppingcart.html">Shopping cart</a></li>
-            <li><a href="TnC.html">Terms and Conditions</a></li>
-        </ul>
+        <hr>
+        <div class="endfooter">
+            <p>© Moonlight Cake House Sdn. Bhd. (MCHSB) 2021 . All Rights Reserved</p>
         </div>
-        <div>
-        <h4>Contact Us</h4>
-        <label>Email:</label>
-        <a href=" mailto:info@moonlightcake.com">info@moonlightcake.com</a>
-        <h4>Phone:</h4>
-        <p>Moonlight Cake House Sdn. Bhd.<br></p>
-        <a href="tel:+607-558 9292">+607-558 9292</a>
-        <p>Taman Sutera Utama (Headoffice)<br><p>
-        <a href="tel:+607-558 3322">+607-558 3322</a>
-        </div>
-      </div>
-      </footer>
+    </footer>
     </body>
 
 </html>
