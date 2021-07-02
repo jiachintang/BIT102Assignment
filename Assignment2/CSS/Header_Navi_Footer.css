@@ -6,9 +6,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f5fb92;
     font-family:Arial, Helvetica, sans-serif;
 }
-  
+h2 {text-align: center;}
   /* Header Styling Start */
 .header{
     background-color: #f5fb92;
