@@ -2,6 +2,10 @@
     font-size: 100%;
     flex:5;
   }
+
+  .shopPic{
+    padding-left: 30px;
+  }
   .box{
     width:40%;
     margin-right: 30px;
