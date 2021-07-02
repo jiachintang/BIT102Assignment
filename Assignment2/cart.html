@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
     <link rel="icon" href="pic/icon.ico" type="image" sizes="16x16">
-    <script src="Javascript/Header_Navi_Footer.js"></script>
-
+    
     <!-- Links specific to this page -->
     <link rel="stylesheet" href="CSS/cart.css">
-    <script src="Javascript/cart.js"></script>
-
+    
+    
 </head>
 <body>
     <!-- Header and Navi Start (Start Copying from here)-->
@@ -91,8 +90,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
-                            <td>$89.00</td>
+                            <td><input name="qnt_1" type="number" id="qnt_1" value="1" size="2" data-price="89" onclick="CalculateItemsValue()"></td>
+                            <td id="sub_1">$89.00</td>
                         </tr>
                         <tr>
                             <td>
@@ -106,8 +105,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
-                            <td>$79.00</td>
+                            <td><input name="qnt_2" type="number" id="qnt_2" value="1" size="2" data-price="79"></td>
+                            <td id="sub_2">$79.00</td>
                         </tr>
                         <tr>
                             <td>
@@ -121,8 +120,8 @@
                                     </div>
                                 </div>
                             </td>
-                            <td><input type="number" value="1"></td>
-                            <td>$99.00</td>
+                            <td><input name="qnt_3" type="number" id="qnt_3" value="1" size="2" data-price="99"></td>
+                            <td id="sub_3">$99.00</td>
                         </tr>
                     </tbody>
 
@@ -141,7 +140,7 @@
                         </tr>
                         <tr>
                             <th colspan="2">Total:</th>
-                            <td>$267.00</td>
+                            <td id="ItemsTotal">$267.00</td>
                         </tr>
         
                     </tfoot>
@@ -247,5 +246,10 @@
         </div>
     </footer>
     <!-- Footer End (Stop Copying Here)-->
+
+    <!-- JQuery and Javascript Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="Javascript/cart.js"></script>
+    <script src="Javascript/Header_Navi_Footer.js"></script>
 </body>
 </html>

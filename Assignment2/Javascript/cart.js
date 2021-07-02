@@ -13,3 +13,35 @@ function validateName(){
         return false;
     }
 }
+
+
+
+window.onload = function() {CalculateItemsValue()};
+function CalculateItemsValue() {
+    var total = 0;
+    var total_items = 3;
+
+    for (i=1; i<=total_items; i++) {
+         
+        itemID = document.getElementById("qnt_"+i);
+        subTotal = document.getElementById("sub_"+i);
+        if (typeof itemID === 'undefined' || itemID === null) {
+            alert("No such item - " + "qnt_"+i);
+        } else {
+            subTotal.innerHTML = "$" + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+            total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+        }
+         
+    }
+    document.getElementById("ItemsTotal").innerHTML = "$" + total;
+     
+}
+
+$("input[type=number]").on({
+    keyup: function(){
+        CalculateItemsValue();
+    },
+    click: function(){
+        CalculateItemsValue();
+    }
+  });
