@@ -11,6 +11,13 @@
     display:block;
     padding-left: 10px;
 }
+.outlets a{
+  text-decoration: none;
+  color: #000;
+}
+.outlets a:link{
+  color: brown;
+}
 .outlets span{
     display:inline;
     padding-left: 10px;
@@ -22,6 +29,12 @@
     padding: 5px 5px;
 }
 
+#mobile{
+  display:none;
+}
+#desktop{
+  display:block;
+}
 
 @media screen and (max-width: 768px){
     .wrapper{
