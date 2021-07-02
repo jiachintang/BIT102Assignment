@@ -127,90 +127,8 @@ footer a:hover{color:brown;}
 #desktop{
   display:block;
 }
-/*index.html*/
-.main{
-  color:#310303;
-}
-.recently{
-  background-color: #F3EAAF;
-  width: auto;
-  overflow:auto;
-  flex:5;
-}
-.categories{
-  background-color: #FAE29C;
-  border: white;
-  width: auto;
-  overflow:auto;
-  flex:5;
-}
-.recently img, .categories img{
-  display: inline-block;
-  padding-left: 10px;
-}
-.recently label, .categories label{
-  display:inline-block;
-  padding-left: 5px;
-}
 
 
-
-/*product.html*/
-#sorting{
-  float: left;
-  height: auto;
-  width: auto;
-  font-size:medium;
-  background-color: palegoldenrod;
-  flex:5;
-  position: static;
-}
-.radio{
-  color: black;
-  display: inline-block;
-  padding: 20px;
-}
-#sorting span input{
-  background-color: honeydew;
-  margin-bottom: 10px;
-  color: white;
-}
-#product {
-  display: inline-block;
-  flex: 5;
-  width: 60%;
-  flex-wrap: wrap;
-  padding-left: 0px;
-}
-#product img{
-  width: 30%;
-  height: 30%;
-  padding: 10px;
-  display:inline-block;
-  flex:1;
-}
-#select{
-  padding-left: 110px;
-  display:block;
-}
-
-/*membership.html*/
-#membership{
-  background: #F9E076;
-  margin: 0 250px;
-}
-#membership ol li{
-  padding-bottom: 45px;
-  font-size: large;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-shadow: 0px 1px 1px rgb(172, 19, 172);
-}
-#membership img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%; 
-}
 
 /*different screen size*/
 @media screen and (max-width: 768px){
@@ -231,7 +149,6 @@ footer a:hover{color:brown;}
     left: 0;
     top: 0;
   }
-
   .navbar a.icon:hover, .navbar span#mobileNav img:hover{
     background-color: #CC5801;
     color: #FAE29C;
