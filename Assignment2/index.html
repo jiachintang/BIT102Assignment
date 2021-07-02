@@ -10,11 +10,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
+        <script src="mobilenav.js"></script>
     </head>
 
     <body>
       <header class="header">
-        Moonlight Cake House
+        
         <a href="https://www.facebook.com/MoonlightCakeHouse/">
           <img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" 
           alt="facebook" >
@@ -27,10 +28,13 @@
       </header>
       
       <nav class="navbar">
+        <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
+          <i class="fa fa-bars"></i>
+        </a>
           <div id="mobileNav">
             <ul>
             <a href="javascript:void(0);" class="icon" onclick="mobilenav()">
-              <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
             </a>
             <li><a href="index.html">Home</a></li>
             <li><a href="product.html">Product</a></li>
@@ -45,16 +49,18 @@
               <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             </li>
-            </ul>
+            <span>
+              <a href="register.html"><img src= "pic/register.png"></a>
+              <a href="login.html"><img src= "pic/login.png"></a>
+              <a href="shoppingcart.html"><img src= "pic/cart.png"></a>
+            </span>
+            </ul> 
           </div>
+          <span id="mobileNav">
+            <a href="register.html"><img src= "pic/register.png"></a>
+            <a href="login.html"><img src= "pic/login.png"></a>
+            <a href="shoppingcart.html"><img src= "pic/cart.png"></a>
           </span>
-        </div>
-        <span>
-          <a href="register.html"><img src= "pic/register.png"></a>
-          <a href="login.html"><img src= "pic/login.png"></a>
-          <a href="shoppingcart.html"><img src= "pic/cart.png"></a>
-        </span>
-        </ul>
         
       </nav>
       

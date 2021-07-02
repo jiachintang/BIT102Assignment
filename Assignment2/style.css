@@ -18,7 +18,6 @@ h2 {text-align: center;}
  background-repeat: no-repeat;
  background-size: 70%;
  height: 110px;
- color:transparent;
  font-size: 100%;
 }
 .header img{
@@ -38,9 +37,7 @@ h2 {text-align: center;}
   width: 100%; 
   top: 0;
 }
-.navbar #mobileNav{
-  display:none;
-}
+
 .navbar #desktop{
   display:flex;
 }
@@ -66,8 +63,8 @@ h2 {text-align: center;}
   padding: 18px 14px 18px 14px;
   color: #f2f2f2;
 }
-.navbar span{
-  display:flex;
+.navbar span#mobileNav{
+  display:none;
 }
 
 .navbar span img{
@@ -247,6 +244,7 @@ footer a:hover{color:brown;}
 
 /*product.html*/
 #sorting{
+  float: left;
   height: auto;
   width: auto;
   font-size:medium;
@@ -261,7 +259,6 @@ footer a:hover{color:brown;}
 }
 #sorting span input{
   background-color: honeydew;
-  float:left;
   margin-bottom: 10px;
   color: white;
 }
@@ -308,10 +305,11 @@ footer a:hover{color:brown;}
     padding:0;
     background-position-x: 10px;
   }
-  .navbar #mobileNav{
+  .navbar span#mobileNav{
     display:block;
-    position:relative;
+    float:right;
   }
+
   .navbar a.icon {
     background: black;
     color:#fff;
@@ -320,11 +318,12 @@ footer a:hover{color:brown;}
     left: 0;
     top: 0;
   }
-  .navbar a.icon:hover{
+
+  .navbar a.icon:hover, .navbar span#mobileNav img:hover{
     background-color: #CC5801;
     color: #FAE29C;
+    transition: 0.1ms;
   }
-  
   .navbar ul{
     flex-direction: column;
     text-align: center;
@@ -333,19 +332,12 @@ footer a:hover{color:brown;}
     border-bottom: 2px solid #80400B;
   }
   .navbar span{
-    display:flex;
+    display:none;
   }
-  .mobile-container {
-    max-width: 480px;
-    margin: auto;
-    background-color: #555;
-    height: 500px;
-    color: white;
-    border-radius: 10px;
-  }
+
   .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #310303;
     position: relative;
   }
 
