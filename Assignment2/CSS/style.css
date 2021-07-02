@@ -99,6 +99,9 @@ h2 {text-align: center;}
   flex-direction: row;
   background-color: #f5fb92;
 }
+.main{
+  color:#310303;
+}
 /*Footer*/
 footer{margin: 0;
 	padding: 0;}
