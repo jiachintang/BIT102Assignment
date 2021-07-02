@@ -24,9 +24,7 @@ function myFunction() {
     //Only have Sticky when reach the navbar position
     if (window.pageYOffset >= sticky) {
         navbar.className= "navbar sticky"
-        document.getElementById("demo").innerHTML ="fuck yes";
     } else {
         navbar.className= "navbar"
-        document.getElementById("demo").innerHTML = "fuck no";
     }
 }
