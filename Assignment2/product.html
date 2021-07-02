@@ -55,14 +55,14 @@
               <h2>Categories</h2>
                 <span class ="radio">
                     <h3>Size</h3>
-                <input type="radio" name="inch"  id="inch5" onclick="size(5)"> 
-                <label for="inch5"> 5 Inch</label> <br>
-                <input type="radio" name="inch"  id="inch6" onclick="size(6)">
-                <label for="inch6"> 6 Inch</label> <br>
-                <input type="radio" name="inch"  id="inch8" onclick="size(8)">
-                <label for="inch8"> 8 Inch</label> <br>
-                <input type="radio" name="inch"  id="inch10" onclick="size(10)">
-                <label for="inch10"> 10 Inch</label> <br>
+                <input type="radio" name="inch" id="inch5" onclick="inch(5)"> 
+                <label for="inch5">5 Inch</label> <br>
+                <input type="radio" name="inch" id="inch6" onclick="inch(6)">
+                <label for="inch6">6 Inch</label> <br>
+                <input type="radio" name="inch" id="inch8" onclick="inch(8)">
+                <label for="inch8">8 Inch</label> <br>
+                <input type="radio" name="inch" id="inch10" onclick="inch(10)">
+                <label for="inch10">10 Inch</label> <br>
                 </span>
                 <span class ="radio">
                     <h3>Festival</h3>
@@ -82,7 +82,7 @@
                 <input type="radio" name="flavour" value="matcha" id="matcha" onclick="flavour(14)">
                 <label for="matcha">Matcha</label> <br>
                 </span>
-                <button onclick="clear()">Clear</button>
+                <button onclick="location.reload()">Clear</button>
             </div>
 
             <span id="select">
@@ -91,22 +91,26 @@
                 <option value="high">Highest price</option>
               </select>
             </span>
+
             <div class="clear wrapper" id="product">
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_OLC8Lem.png" alt="5 inch" id="five"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/saycheesy_s.png" alt="6 inch" id="six"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_DBkzIGW.png" alt="8 inch" id="eight"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_m4teR6r.png" alt="10 inch" id="ten"></a>
+
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/RICH_CHOCOLATE_s.png" alt="Chocolate" id="choc"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/MMC.png" alt="Fruit" id="frut"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_q8I3AOs.png" alt="Vanilla" id="vanil"></a>
+              <a href=""><img src="https://app.moonlightcake.com/media/product/45/GTM.png" alt="Chocolate cake" id="match"></a>
+
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_ruewIr4.png" alt="Wedding" id="wed"></a>
               <a href=""><img src="https://app.moonlightcake.com/media/product/45/Untitled_1ylaNUo.png" alt="Baby" id="babe"></a>
-              <a href=""><img src="https://app.moonlightcake.com/media/product/45/GTM.png" alt="Chocolate cake" id="match"></a>
+
           </div>
         </div>
       </main>
       <script>
-        function size(x){
+        function inch(x){
           if (x == 5){
             document.getElementById("six").style.display = "none";
             document.getElementById("eight").style.display = "none";

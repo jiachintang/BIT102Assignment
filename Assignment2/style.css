@@ -183,8 +183,8 @@ footer a:hover{color:brown;}
   padding-left: 0px;
 }
 #product img{
-  width: 300px;
-  height: 250px;
+  width: 30%;
+  height: 30%;
   padding: 10px;
   display:inline-block;
   flex:1;
@@ -286,5 +286,23 @@ footer a:hover{color:brown;}
   }
   #desktop{
     display:none;
+  }
+  #product {
+    display: inline-block;
+    flex: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-left: 0px;
+  }
+  #product img{
+    width: 30%;
+    height: 30%;
+    padding: 5px;
+  }
+  #sorting{
+    font-size:small;
+  }
+  .radio{
+    padding: 10px;
   }
 }
