@@ -1,4 +1,9 @@
 /* ~~~~~~~~~~~~~~~~INDEX PAGE STYLING START~~~~~~~~~~~~~~~~ */
+/* For fotorama */
+.fotorama{
+  background-color:#2A2623;
+}
+
 /* Wrapper for 2 columns Styling Start*/
 .wrapper{
   display: flex;
