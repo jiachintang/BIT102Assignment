@@ -9,7 +9,6 @@ body {
     background-color: #f5fb92;
     font-family:Arial, Helvetica, sans-serif;
 }
-h2 {text-align: center;}
   /* Header Styling Start */
 .header{
     background-color: #f5fb92;
@@ -69,7 +68,7 @@ h2 {text-align: center;}
     display: none;
 }
 .mainNav a:hover{
-    background-color: #cc590156;
+    background-color: #CC5801;
     color: white;
     transition: 0.1ms;
 }
