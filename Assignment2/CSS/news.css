@@ -2,14 +2,13 @@
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #f5fb92;
 }
 .new{
-    background-color: #DAC17C;
+    background-color: #F3EAAF;
     flex:5;
   }
   .news{
-    background-color:#EEDC9A;
+    background-color:#C7C090;
     flex:5;
   }
   
