@@ -7,10 +7,12 @@
   }
 .outlets{
     flex:3;
+    box-sizing: border-box;
     border: 1px solid rgb(99, 0, 0);
     box-shadow: 5px 10px #964B00;
     margin: 20px 20px 20px 20px;
     background-color: #F9E076;
+    padding:0;
 }
 .outlets label, .outlets a{
     display:block;
@@ -31,8 +33,8 @@
     padding-left: 10px;
 }
 .outlets img{
-    height:200px;
-    width:300px;
+    height:auto;
+    width:auto;
     display:flex;
     margin-left: auto;
     margin-right: auto;
