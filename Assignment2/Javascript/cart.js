@@ -16,13 +16,13 @@ function validateName(){
 
 
 
+//Calculation for cart page
 window.onload = function() {CalculateItemsValue()};
 function CalculateItemsValue() {
     var total = 0;
     var total_items = 3;
 
     for (i=1; i<=total_items; i++) {
-         
         itemID = document.getElementById("qnt_"+i);
         subTotal = document.getElementById("sub_"+i);
         if (typeof itemID === 'undefined' || itemID === null) {
@@ -31,10 +31,8 @@ function CalculateItemsValue() {
             subTotal.innerHTML = "$" + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"))+".00";
             total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
         }
-         
     }
     document.getElementById("ItemsTotal").innerHTML = "$" + total + ".00";
-     
 }
 
 $("input[type=number]").on({
