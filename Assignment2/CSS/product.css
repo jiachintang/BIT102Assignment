@@ -6,6 +6,11 @@
     background-color: #C7C090;
     flex:5;
     position: static;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  #sorting h2{
+    text-align: center;
   }
   .radio{
     color: black;
@@ -24,7 +29,7 @@
     display: inline-block;
     flex: 5;
     width: 60%;
-    min-height: 250px;
+    min-height: 260px;
     flex-wrap: wrap;
     padding-left: 0px;
   }
