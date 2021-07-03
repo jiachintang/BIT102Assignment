@@ -28,12 +28,12 @@ function CalculateItemsValue() {
         if (typeof itemID === 'undefined' || itemID === null) {
             alert("No such item - " + "qnt_"+i);
         } else {
-            subTotal.innerHTML = "$" + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+            subTotal.innerHTML = "$" + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"))+".00";
             total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
         }
          
     }
-    document.getElementById("ItemsTotal").innerHTML = "$" + total;
+    document.getElementById("ItemsTotal").innerHTML = "$" + total + ".00";
      
 }
 
