@@ -34,10 +34,6 @@ body {
     display: flex; /*split navi bar into 2 flex*/
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0; /*whats this for*/
-    padding: 0; /*whats this for*/
-    overflow: auto; /*whats this for*/
-    width: 100%; /*whats this for*/
 }
 .sticky{
     position: sticky;
