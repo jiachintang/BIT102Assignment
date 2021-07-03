@@ -145,27 +145,25 @@
         
                     </tfoot>
                 </table>
-                <div class="cancel-checkout">
-                    <button class="button">Cancel Order</button>
-                    <button class="button">Check Out</button>
-                </div>
             </div>
             <!-- Right Column Your Information -->
             <div class="information">
                 <p>Your Information</p>
-                <form>
+                <form id="form" method="POST" action="https://webdevbasics.net/scripts/demo.php" class="feedbackRow">
                     <label for="custName">Name *</label>
                     <br>
-                    <input type="text" name="custName" id="custName" placeholder="John Tan" onblur="validateName()">
-                    <span id="custNamePrompt"></span>
+                    <input type="text" name="custName" id="custName" placeholder="John Smith" onchange="checkName();">
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error Message</small>
                     <br><br>
                     <label for="phoneNum">Phone Number *</label>
                     <br>
-                    <input type="text" name="phoneNum" id="phoneNum" placeholder="012-3456789" required>
+                    <input type="text" name="phoneNum" id="phoneNum" placeholder="012-3456789" onchange="checkTel();">
                     <br><br>
                     <label for="email">E-mail *</label>
                     <br>
-                    <input type="email" name="email" id="email" placeholder="you@yourdomain.com" required>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com" onchange="checkEmail();">
                     <br><br>
         
                     <label for="pickup">Self Pick Up at</label>
@@ -192,7 +190,11 @@
                     <br>
                     <input type="time">
                     <br><br>
-        
+                    
+                <div class="cancel-checkout">
+                    <button>Cancel Order</button>
+                    <input type="submit" value="Check Out">
+                </div>
                 </form>
             </div>
         </div>
@@ -249,7 +251,8 @@
 
     <!-- JQuery and Javascript Links -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="Javascript/cart.js"></script>
+    <script src="Javascript/feedbackValidation.js"></script>
     <script src="Javascript/Header_Navi_Footer.js"></script>
+    <script src="Javascript/cart.js"></script>
 </body>
 </html>
