@@ -34,6 +34,14 @@ body {
     display: flex; /*split navi bar into 2 flex*/
     flex-wrap: wrap;
     justify-content: space-between;
+<<<<<<< HEAD
+=======
+    margin: 0; /*whats this for*/
+    padding: 0; /*whats this for*/
+    overflow: auto; /*whats this for*/
+    width: 100%; /*whats this for*/
+    z-index: 1; /* Keeps the navebar in front at all times (I had absolute objects that were going above this) ~Zalaan~ */
+>>>>>>> 8f69836439928d552353d9d7c4b76209cd24ad87
 }
 .sticky{
     position: sticky;
