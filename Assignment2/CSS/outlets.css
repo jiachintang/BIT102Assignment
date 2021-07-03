@@ -30,13 +30,6 @@
     padding: 5px 5px;
 }
 
-#mobile{
-  display:none;
-}
-#desktop{
-  display:block;
-}
-
 main h2{
   text-align: center;
 }
@@ -47,10 +40,5 @@ main h2{
         width:fit-content;
         
       }
-    #mobile{
-      display:block;
-    }
-    #desktop{
-      display:none;
-    }
+
   }
