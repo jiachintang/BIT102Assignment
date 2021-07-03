@@ -20,8 +20,8 @@ body{
 .reglognav {font-size: 1.5em;}
 .reglognav a {text-decoration: none;}
 .reglognav a:link, .reglognav a:visited {
-	color: gray;
-	opacity: 0.5;
+	color: rgb(88, 88, 88);
+	opacity: 0.75;
 	transition: color 0.3s;
 }
 .reglognav a:hover, .reglognav a:active {

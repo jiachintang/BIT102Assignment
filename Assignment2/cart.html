@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
     <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
-    
+
     <!-- Links specific to this page -->
     <link rel="stylesheet" href="CSS/cart.css">
-    
-    
+
+
 </head>
+
 <body>
     <!-- Header and Navi Start (Start Copying from here)-->
     <header class="header">
@@ -32,14 +34,16 @@
     <nav class="navbar" id="navbarJS">
         <!-- Main part of navi bar, will convert to hamburger menu -->
         <div class="mainNav" id="mainNavJS">
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i class="fa fa-bars"></i></a>
-            <a href="index.html">Home</a> <!--Active Class change to whichever page you are on-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html">Home</a>
+            <!--Active Class change to whichever page you are on-->
             <a href="product.html">Product</a>
             <a href="membership.html">Membership</a>
             <a href="news.html">News</a>
             <a href="aboutUs.html">About Us</a>
             <a href="outlets.html">Outlets</a>
-            <a href="feedback.html">Feedback</a> 
+            <a href="feedback.html">Feedback</a>
             <a href="TnC.html">Terms and Conditions</a>
         </div>
 
@@ -49,15 +53,15 @@
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <a href="register.html"><img src= "pic/register.png" alt="register"></a> 
-            <a href="login.html"><img src= "pic/login.png" alt="login"></a> 
-            <a href="cart.html"  class="active"><img src= "pic/cart.png" alt="shoppingCart"></a>
+            <a href="register.html"><img src="pic/register.png" alt="register"></a>
+            <a href="login.html"><img src="pic/login.png" alt="login"></a>
+            <a href="cart.html" class="active"><img src="pic/cart.png" alt="shoppingCart"></a>
         </div>
     </nav>
     <!-- Header and Navi End (Stop Copying Here)-->
 
     <div class="background">
-        
+
         <div class="pageLayout">
             <!-- left column Your Cart -->
             <div class="cart">
@@ -68,7 +72,7 @@
                         <col span="1" style="width: 15%;">
                         <col span="1" style="width: 15%;">
                     </colgroup>
-        
+
                     <thead>
                         <tr>
                             <th>Product</th>
@@ -76,7 +80,7 @@
                             <th>Subtotal</th>
                         </tr>
                     </thead>
-        
+
                     <tbody>
                         <tr>
                             <td>
@@ -142,59 +146,75 @@
                             <th colspan="2">Total:</th>
                             <td id="ItemsTotal">$267.00</td>
                         </tr>
-        
+
                     </tfoot>
                 </table>
             </div>
+
             <!-- Right Column Your Information -->
             <div class="information">
                 <p>Your Information</p>
-                <form id="form" method="POST" action="https://webdevbasics.net/scripts/demo.php" class="feedbackRow">
-                    <label for="custName">Name *</label>
-                    <br>
-                    <input type="text" name="custName" id="custName" placeholder="John Smith" onchange="checkName();">
-                    <i class="fa fa-check-circle"></i>
-                    <i class="fa fa-exclamation-circle"></i>
-                    <small>Error Message</small>
-                    <br><br>
-                    <label for="phoneNum">Phone Number *</label>
-                    <br>
-                    <input type="text" name="phoneNum" id="phoneNum" placeholder="012-3456789" onchange="checkTel();">
-                    <br><br>
-                    <label for="email">E-mail *</label>
-                    <br>
-                    <input type="email" name="email" id="email" placeholder="example@domain.com" onchange="checkEmail();">
-                    <br><br>
-        
-                    <label for="pickup">Self Pick Up at</label>
-                    <br>
-                    <select name="pickup" id="pickup">
-                        <option value="def">Please select a location</option>
-                        <option value="bukitIndah">Bukit Indah</option>
-                        <option value="KSL">KSL</option>
-                        <option value="mtAustin">Mount Austin</option>
-                        <option value="pelangi">Pelangi</option>
-                        <option value="permasJaya">Permas Jaya</option>
-                        <option value="seriAlam">Seri Alam</option>
-                        <option value="suteraUtama">Sutera Utama</option>
-                        <option value="tamanGaya">Taman Gaya</option>
-                        <option value="setapak">Setapak</option>
-                        <option value="sriPetaling">Sri Petaling</option>
-                        <option value="bktTinggi"> Bukit Tinggi</option>
-                        <option value="puchong">Puchong</option>
-                    </select>
-                    <br><br>
-                    <label for="dateTime">Self Collect Date & Time (Order must be made at least 4 days prior to collectiond date)</label>
-                    <br>
-                    <input type="date">
-                    <br>
-                    <input type="time">
-                    <br><br>
-                    
-                <div class="cancel-checkout">
-                    <button>Cancel Order</button>
-                    <input type="submit" value="Check Out">
-                </div>
+                <form id="form" class="form-area" method="POST" action="https://webdevbasics.net/scripts/demo.php"
+                    class="feedbackRow">
+
+                    <div>
+                        <label>Your Name (required)</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Smith" onchange="checkName();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label>Your Mobile Number (required)</label>
+                        <input type="tel" id="tel" name="tel" placeholder="0123456789" onchange="checkTel();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label>Your Email Address (required)</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com"
+                            onchange="checkEmail();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="pickup">Self Pick Up at</label>
+                        <br>
+                        <select name="pickup" id="pickup">
+                            <option value="def">Please select a location</option>
+                            <option value="bukitIndah">Bukit Indah</option>
+                            <option value="KSL">KSL</option>
+                            <option value="mtAustin">Mount Austin</option>
+                            <option value="pelangi">Pelangi</option>
+                            <option value="permasJaya">Permas Jaya</option>
+                            <option value="seriAlam">Seri Alam</option>
+                            <option value="suteraUtama">Sutera Utama</option>
+                            <option value="tamanGaya">Taman Gaya</option>
+                            <option value="setapak">Setapak</option>
+                            <option value="sriPetaling">Sri Petaling</option>
+                            <option value="bktTinggi"> Bukit Tinggi</option>
+                            <option value="puchong">Puchong</option>
+                        </select>
+                        <br><br><br>
+                    </div>
+                    <div>
+                        <label for="dateTime">Self Collect Date & Time (Order must be made at least 4 days prior to
+                            collectiond date)</label>
+                        <br>
+                        <input type="date">
+                        <br>
+                        <input type="time">
+                        <br><br>
+                    </div>
+                    <div class="cancel-checkout">
+                        <button>Cancel Order</button>
+                        <input type="submit" value="Check Out">
+                    </div>
                 </form>
             </div>
         </div>
@@ -218,9 +238,9 @@
                 <h2>Contact Us</h2>
                 <a href="mailto:info@moonlightcake.com">info@moonlightcake.com</a>
                 <p><a href="tel:+607-5589292">+607-558 9292</a>
-                Moonlight Cake House Sdn. Bhd.(Office)</p>
+                    Moonlight Cake House Sdn. Bhd.(Office)</p>
                 <p><a href="tel:+607-5583322">+607-558 3322</a>
-                Taman Sutera Utama (Head Quarter)</p>
+                    Taman Sutera Utama (Head Quarter)</p>
             </div>
             <div class="footer-heading footer-3">
                 <h2>Find Us On</h2>
@@ -236,9 +256,12 @@
             <div class="footer-heading footer-4">
                 <h2>Download Our App</h2>
                 <div class="appGroup">
-                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img src="pic/playstore.png" alt="Download Our App"></a>
-                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img src="pic/App-Store.png" alt="Download Our App"></a>
-                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png" alt="/Assignment2Download Our App"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img
+                            src="pic/playstore.png" alt="Download Our App"></a>
+                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img
+                            src="pic/App-Store.png" alt="Download Our App"></a>
+                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png"
+                            alt="/Assignment2Download Our App"></a>
                 </div>
             </div>
         </div>
@@ -255,4 +278,5 @@
     <script src="Javascript/Header_Navi_Footer.js"></script>
     <script src="Javascript/cart.js"></script>
 </body>
+
 </html>
