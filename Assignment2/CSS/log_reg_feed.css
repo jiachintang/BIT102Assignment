@@ -1,9 +1,12 @@
 *{box-sizing: border-box;}
 html {overflow-y: scroll;} /* fixes scrollbar to the side so content won't shift */
 
+body{
+  background-color: #F3EAAF;
+}
 /*main area*/
 .box {
-  background-color: #f0d665;
+  background-color: #E7C27D;
   border-radius: 25px;
   box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
   width: 80%;
