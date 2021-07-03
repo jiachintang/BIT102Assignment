@@ -52,17 +52,10 @@ main h2{
 }
 
 @media screen and (max-width: 768px){
-    .wrapper{
-        flex-direction: column;
-        width:fit-content;
-        
-      }
     .outlets{
       flex:100%;
     }
-    .outlets img{
-      padding-top: 0;
-    }
+
     
 
   }
