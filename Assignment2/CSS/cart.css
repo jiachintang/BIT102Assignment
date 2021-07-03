@@ -4,7 +4,7 @@
 
 body{
     padding: 0;
-    background-color: #ECDEB7;
+    background-color: #F3EAAF;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #ECDEB7;
+    background-color: #F3EAAF;
     margin-right: auto;
     margin-left: auto;
     width: 1200px;
@@ -47,7 +47,7 @@ body{
 
 /* Left Column Your Cart */
 .cart{
-    background-color: white;
+    background-color: #C7C090;
     flex: 65%;
     margin: 0px 0px 0px 25px;
     padding: 0px 20px 10px 10px;
