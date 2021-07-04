@@ -10,6 +10,7 @@
   .news{
     background-color:#C7C090;
     flex:5;
+
   }
   
   .new img, .news img{
@@ -24,6 +25,9 @@
    display:block;
    overflow: auto;
    text-align: left;
+   position: relative;
+   right: 0px;
+   margin-bottom: 20px;
   }
   .clear{
     clear: both;

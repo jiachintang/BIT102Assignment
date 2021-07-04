@@ -33,9 +33,9 @@ main p{
 
 .small-container{
     flex: 80%;
-    max-width: 1080px;
     padding-left: 25px;
     padding-right: 25px;
+    background-color: #F3EAAF;
 }
 
 
@@ -45,7 +45,14 @@ main p{
     min-width: 200px;
     margin-bottom: 40px;
     transition: transform 0.5s;
+    animation: fadeIn 3.5s;
 }
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
 .col-4 img{
     width: 100%;
 }
