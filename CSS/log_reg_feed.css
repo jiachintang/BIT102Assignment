@@ -1,0 +1,193 @@
+*{box-sizing: border-box;}
+html {overflow-y: scroll;} /* fixes scrollbar to the side so content won't shift */
+
+body{
+  background-color: #F3EAAF;
+}
+/*main area*/
+.box {
+  background-color: #E7C27D;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+  width: 80%;
+  padding: 20px 20px 30px 20px;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+} 
+
+/* Mini-Navigation and headings for forms */
+.reglognav {font-size: 1.5em;}
+.reglognav a {text-decoration: none;}
+.reglognav a:link, .reglognav a:visited {
+	color: rgb(88, 88, 88);
+	opacity: 0.75;
+	transition: color 0.3s;
+}
+.reglognav a:hover, .reglognav a:active {
+	color: black;
+	opacity: 0.6;
+}
+
+#section-title {text-align: left; margin-top: 0;}
+#section-title span {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+#section-title span a {text-decoration: none;}
+
+
+/*Overall form structure*/
+.form-area {width:100%;margin:auto;}
+.form-area td{width:50%;padding-left:5%;padding-right:5%;}
+.centerline {
+	border-right: 1px solid rgba(128, 128, 128, 0.514);
+	padding-right: 0.5ex;
+  text-align: center;
+}
+.vAlign {vertical-align: top;}
+
+
+/* Form area with inputs and submission */
+.form-area div{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-area label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-area input, .form-area textarea {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%;
+  min-width: 250px;
+  transition: border 0.2s;
+}
+
+.form-area i {
+  color: #ffffff;
+  position: absolute;
+  top: 42%;
+  right: 3%;
+  visibility: hidden;
+  transition: color 0.2s;
+}
+
+.form-area small {
+  color: #f0d665;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: color 0.2s;
+}
+
+.form-area [type=submit] {
+  background-color: #640808;
+  border: 2px solid #640808;
+  color: white;
+  display: block;
+  width: 50%;
+  min-width: 125px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s;
+} 
+
+.form-area [type=submit]:hover {
+  background-color: #4e0505;
+}
+
+
+/* override label and input properties for checkbox, used in feedback.html */
+.checkbox {
+  display: inline !important;
+  width: 20px !important;
+  min-width: 13px !important;
+}
+
+/* Input styling when filling up */
+.form-area div.success input, .form-area div.success textarea {
+  border-color: #2ecc71;
+  transition: border 0.2s;
+}
+.form-area div.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+  transition: color 0.2s;
+}
+
+.form-area div.error input, .form-area div.error textarea {
+  border-color: #e74c4c;
+  transition: border 0.2s;
+}
+.form-area div.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c4c;
+  transition: color 0.2s;
+}
+.form-area div.error small {
+  visibility: visible;
+  color: #e74c4c;
+  transition: color 0.2s;
+}
+
+/* Facebook and Google Buttons*/
+.btn {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  width: 240px;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 5px 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 20px;
+}
+.btn img {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.fb {
+  background-color: #4a5e9d;
+  color: white;
+  transition: background-color 0.2s;
+}
+.fb:hover{background-color: #405086;}
+
+.google {
+  background-color: white;
+  color: rgb(73, 73, 73);
+  transition: background-color 0.2s;
+}
+.google:hover{background-color: #b4b3b3;}
+
+
+
+/* ~~~~~~~~~~~~~~~~ Responsive Layout ~~~~~~~~~~~~~~~~~ */
+@media screen and (max-width: 768px) {
+  .box {width: 100%;}
+  /* Remove center line, convert to 1 column */
+  .form-area br {display: none;}
+  .btn {margin-bottom: 10px;}
+  .form-area .centerline {border: none;}
+  .form-area td {
+      display: block;
+      width: 100%;
+  }
+
+  #section-title span {display: block;}
+}

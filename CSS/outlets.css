@@ -1,0 +1,61 @@
+/*flex layout*/
+body{
+  background-color: #F3EAAF;
+}
+.wrapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+.outlets{
+    flex:30%;
+    box-sizing: border-box;
+    border: 1px solid rgb(99, 0, 0);
+    box-shadow: 5px 10px #964B00;
+    margin: 20px 20px 20px 20px;
+    background-color: #E7C27D;
+    padding:0;
+}
+.outlets label, .outlets a{
+    display:block;
+    padding-left: 10px;
+}
+.outlets a{
+  text-decoration: none;
+  color: #000;
+}
+.outlets a:link{
+  color: brown;
+}
+.outlets a:hover{
+  color:red;
+}
+.outlets span{
+    display:inline;
+    padding-left: 10px;
+}
+.outlets img{
+    height:auto;
+    width:auto;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.outlets label, .outlets a{
+  text-align: center;
+}
+main h2{
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+@media screen and (max-width: 768px){
+    .outlets{
+      flex:100%;
+    }
+
+    
+
+  }

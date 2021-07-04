@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    background-color:#F3EAAF;
+}
+
+
+.bg-1, .bg-2{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.bg-1{
+    background-image: url(../pic/Outlet3blur.jpg); 
+    height: 40vh;
+}
+
+.bg-2{
+    background-image: url(../pic/Outlet2blur.jpg); 
+    height: 40vh;
+}
+
+h1 {
+    color: black;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    position:static;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+.webSection, .mobileSection{
+    background-color:#F3EAAF;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.title h2{
+    color: white;
+    background-color: #c77536;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    align-content: center;
+    padding: 0 25px;
+}
+
+.statement{
+    margin-bottom: 40px;
+}
+
+h4{
+    margin-bottom: -10px;
+}
