@@ -34,9 +34,9 @@ main p{
 .small-container{
     flex: 80%;
     max-width: 1080px;
-    margin: auto;
     padding-left: 25px;
     padding-right: 25px;
+    border: solid black 2px;
 }
 
 
