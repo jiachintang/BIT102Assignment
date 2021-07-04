@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 
-<html lang="en"> 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Moonlight Cake House</title>
+<html lang="en">
 
-        <!-- Common Links for all pages -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
-        <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
-        <script src="Javascript/Header_Navi_Footer.js"></script>
-        
-        <!-- Links specific to this page -->
-        <link rel="stylesheet" href="CSS/product.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moonlight Cake House</title>
 
-    </head>
+    <!-- Common Links for all pages (Copy this section)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
+    <script src="Javascript/Header_Navi_Footer.js"></script>
 
-    <body>
-      <header class="header">
+    <!-- Links specific to this page -->
+    <link rel="stylesheet" href="CSS/product.css">
+
+</head>
+
+<body>
+    <header class="header">
         <!-- Facebook Icon -->
         <a href="https://www.facebook.com/MoonlightCakeHouse/">
             <img src="pic/fb_icon.png" alt="Facebook">
@@ -28,19 +33,20 @@
         <a href="https://www.instagram.com/moonlightcakehouse/">
             <img src="pic/insta_icon.png" alt="Instagram">
         </a>
-      </header>
-      
-      <nav class="navbar" id="navbarJS">
+    </header>
+
+    <nav class="navbar" id="navbarJS">
         <!-- Main part of navi bar, will convert to hamburger menu -->
         <div class="mainNav" id="mainNavJS">
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i class="fa fa-bars"></i></a>
-            <a href="index.html">Home</a> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html">Home</a>
             <a href="product.html" class="active">Product</a>
             <a href="membership.html">Membership</a>
             <a href="news.html">News</a>
             <a href="aboutUs.html">About Us</a>
             <a href="outlets.html">Outlets</a>
-            <a href="feedback.html">Feedback</a> 
+            <a href="feedback.html">Feedback</a>
             <a href="TnC.html">Terms and Conditions</a>
         </div>
 
@@ -50,130 +56,493 @@
                 <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <a href="register.html"><img src= "pic/register.png" alt="register"></a> 
-            <a href="login.html"><img src= "pic/login.png" alt="login"></a> 
-            <a href="cart.html"><img src= "pic/cart.png" alt="shoppingCart"></a>
+            <a href="register.html"><img src="pic/register.png" alt="register"></a>
+            <a href="login.html"><img src="pic/login.png" alt="login"></a>
+            <a href="cart.html"><img src="pic/cart.png" alt="shoppingCart"></a>
         </div>
     </nav>
 
-      <main>
-        <div>
-            <div id="sorting">
-              <h2><u>Categories</u></h2>
-                <div class ="radio">
-                    <h3>Size</h3>
-                <input type="radio" name="inch" id="inch5" onclick="inch(5)"> 
-                <label for="inch5">5 Inch</label> <br>
-                <input type="radio" name="inch" id="inch6" onclick="inch(6)">
-                <label for="inch6">6 Inch</label> <br>
-                <input type="radio" name="inch" id="inch8" onclick="inch(8)">
-                <label for="inch8">8 Inch</label> <br>
-                <input type="radio" name="inch" id="inch10" onclick="inch(10)">
-                <label for="inch10">10 Inch</label> <br>
-                </div>
-                <div class ="radio">
-                    <h3>Festival</h3>
-                <input type="radio" name="festival" id="wedding" onclick="festival(1)">
-                <label for="wedding">Wedding</label> <br>
-                <input type="radio" name="festival" id="baby" onclick="festival(2)">
-                <label for="baby">Baby Full Month</label> <br>
-                </div>
-                <div class ="radio">
-                    <h3>Flavour</h3>
-                <input type="radio" name="flavour" value="chocolate" id="chocolate" onclick="flavour(11)">
-                <label for="chocolate">Chocolate</label> <br>
-                <input type="radio" name="flavour" value="fruit" id="fruit" onclick="flavour(12)">
-                <label for="fruit">Fruit</label> <br>
-                <input type="radio" name="flavour" value="vanilla" id="vanilla" onclick="flavour(13)">
-                <label for="vanilla">Vanilla</label> <br>
-                <input type="radio" name="flavour" value="matcha" id="matcha" onclick="flavour(14)">
-                <label for="matcha">Matcha</label> <br>
-                </div>
-                <button onclick="location.reload()">Clear</button>
+    <main>
+        <div id="sorting">
+            <div class="row row-2">
+                <h2>Categories</h2>
             </div>
-            <div class="clear wrapper" id="product">
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_OLC8Lem.png" alt="5 inch" id="five" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/saycheesy_s.png" alt="6 inch" id="six" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_DBkzIGW.png" alt="8 inch" id="eight" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_m4teR6r.png" alt="10 inch" id="ten" class="fadeIn"></a>
-
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/RICH_CHOCOLATE_s.png" alt="Chocolate" id="choc" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/MMC.png" alt="Fruit" id="frut" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_q8I3AOs.png" alt="Vanilla" id="vanil" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/GTM.png" alt="Chocolate cake" id="match" class="fadeIn"></a>
-
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_ruewIr4.png" alt="Wedding" id="wed" class="fadeIn"></a>
-              <a href="cart.html"><img src="https://app.moonlightcake.com/media/product/45/Untitled_1ylaNUo.png" alt="Baby" id="babe" class="fadeIn"></a>
-
-          </div>
+            <div class="radio">
+                <h3>Size</h3>
+                <input type="radio" name="category" id="radio1" onclick="inch(5)">
+                <label for="radio1">5 Inch</label> <br>
+                <input type="radio" name="category" id="radio2" onclick="inch(8)">
+                <label for="radio2">8 Inch</label> <br>
+            </div>
+            <div class="radio">
+                <h3>Festival</h3>
+                <input type="radio" name="category" id="radio3" onclick="festival(1)">
+                <label for="radio3">Wedding</label> <br>
+                <input type="radio" name="category" id="radio4" onclick="festival(2)">
+                <label for="radio4">Baby Full Month</label> <br>
+            </div>
+            <div class="radio">
+                <h3>Flavour</h3>
+                <input type="radio" name="category" id="radio5" onclick="flavour(11)">
+                <label for="radio5">Chocolate</label> <br>
+                <input type="radio" name="category" id="radio6" onclick="flavour(12)">
+                <label for="radio6">Fruit</label> <br>
+                <input type="radio" name="category" id="radio7" onclick="flavour(13)">
+                <label for="radio7">Vanilla</label> <br>
+            </div>
+            <button class="btn" onclick="location.reload()">Clear</button>
         </div>
-      </main>
-      <script>
-        function inch(x){
-          if (x == 5){
-            document.getElementById("six").style.display = "none";
-            document.getElementById("eight").style.display = "none";
-            document.getElementById("ten").style.display = "none";
-            document.getElementById("five").style.display = "inline";
-           }
-          else if(x == 6){
-            document.getElementById("five").style.display = "none";
-            document.getElementById("eight").style.display = "none";
-            document.getElementById("ten").style.display = "none";
-            document.getElementById("six").style.display = "inline";
-           }
-          else if(x == 8){
-            document.getElementById("five").style.display = "none";
-            document.getElementById("six").style.display = "none";
-            document.getElementById("ten").style.display = "none";
-            document.getElementById("eight").style.display = "inline";
-          }
-          else if(x == 10){
-            document.getElementById("five").style.display = "none";
-            document.getElementById("six").style.display = "none";
-            document.getElementById("eight").style.display = "none";
-            document.getElementById("ten").style.display = "inline";
-          }
+        <!----------------- title -------------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by rating</option>
+                    <option>Sort by sale</option>
+                </select>
+            </div>
+
+            <!-- 5 inch Cakes -->
+            <div class="row" id="five">
+                <div class="col-4">
+
+                    <img src="pic/5inch/ChocolateStory.png">
+                    <h4><a href="product-details.html">Chocolate House</a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/5inch/CocoaParadise.png">
+                    <h4>Cocoa Oreo</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/5inch/Dewrian.png">
+                    <h4>Shell on Saturn</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$45.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/5inch/strawberry.png">
+                    <h4>Strawberry Delight</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+            </div>
+
+            <!-- 8 Inch Cakes -->
+            <div class="row" id="eight">
+                <div class="col-4">
+                    <img src="pic/8inch/8inch.png">
+                    <h4>White Snow</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$95.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/8inch/8inch2.png">
+                    <h4>Peachtastic</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/8inch/bear.png">
+                    <h4>Beary</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$30.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/8inch/Frraise8inch.png">
+                    <h4>Strawberry Fossil</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$120.00</p>
+                </div>
+            </div>
+
+            <!-- Wedding Cakes -->
+            <div class="row" id="wedding">
+                <div class="col-4">
+                    <img src="pic/Wedding/BlazingLove.png">
+                    <h4>Modern Wedding</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Wedding/Heart_of_Love.jpg">
+                    <h4>The Big Heart</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Wedding/wedding.jpg">
+                    <h4>Hearts of Queen</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Wedding/wedding.png">
+                    <h4>Ancient  Wedding</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+
+            <!-- Baby Cakes -->
+            <div class="row" id="baby">
+                <div class="col-4">
+                    <img src="pic/BabyFullMonth/BabyFullMonth.png">
+                    <h4>Baby Full Month 1</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/BabyFullMonth/BabyFullMonth2.png">
+                    <h4>Baby Full Month 2</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/BabyFullMonth/BabyFullMonth3.png">
+                    <h4>Baby Full Month 3</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/BabyFullMonth/BabyFullMonth4.png">
+                    <h4>Baby Full Month 4</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+
+            <!-- Chocolate Cakes -->
+            <div class="row" id="chocolate">
+                <div class="col-4">
+                    <img src="pic/Chocolate/ChocolateBanana.png">
+                    <h4>Chocolate Fruits</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Chocolate/BelgiumChocolate.png">
+                    <h4>Thousand Layer Chocolate</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Chocolate/ChocolateDelight.jpg">
+                    <h4>Chocolate from Heaven</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Chocolate/ChocolateEarl.png">
+                    <h4>Choco Delight</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+
+            <!-- Fruit Cakes -->
+            <div class="row" id="fruit">
+                <div class="col-4">
+                    <img src="pic/Fruit/freshdurian.png">
+                    <h4>The Durian</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Fruit/fruit1.png">
+                    <h4>Mis Fruits</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Fruit/peachmango.png">
+                    <h4>Fruity Tutty</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Fruit/peachpine.png">
+                    <h4>The Fruit Cake</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+
+            <!-- Vanilla C -->
+            <div class="row" id="vanilla">
+                <div class="col-4">
+                    <img src="pic/Vanila/vanila1.png">
+                    <h4>Absolute Vanilla </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Vanila/vanila2.jpg">
+                    <h4>Vanilla Fromage</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$50.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Vanila/vanila3.png">
+                    <h4>Hokkaido Vanilla </h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="pic/Vanila/vanila4.png">
+                    <h4>Vanilla Supreme</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$75.00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function inch(x) {
+            if (x == 5) {
+                document.getElementById("five").style.display = "flex";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "none";
+
+            } else if (x == 8) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "flex";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "none";
+            } 
         }
-        function festival(y){
-          if (y == 1){
-          document.getElementById("babe").style.display = "none";
-          document.getElementById("wed").style.display = "inline";
-          }
-          else if (y == 2){
-          document.getElementById("babe").style.display = "inline";
-          document.getElementById("wed").style.display = "none";
-           }
-          }
-        function flavour(z){
-          if (z == 11){
-            document.getElementById("frut").style.display = "none";
-            document.getElementById("vanil").style.display = "none";
-            document.getElementById("match").style.display = "none";
-            document.getElementById("choc").style.display = "inline";
-           }
-          else if(z == 12){
-            document.getElementById("choc").style.display = "none";
-            document.getElementById("vanil").style.display = "none";
-            document.getElementById("match").style.display = "none";
-            document.getElementById("frut").style.display = "inline";
-           }
-          else if(z == 13){
-            document.getElementById("choc").style.display = "none";
-            document.getElementById("frut").style.display = "none";
-            document.getElementById("match").style.display = "none";
-            document.getElementById("vanil").style.display = "inline";
-          }
-          else if(z == 14){
-            document.getElementById("choc").style.display = "none";
-            document.getElementById("frut").style.display = "none";
-            document.getElementById("vanil").style.display = "none";
-            document.getElementById("match").style.display = "inline";
-          }
+
+        function festival(y) {
+            if (y == 1) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "flex";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "none";
+            } else if (y == 2) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "flex";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "none";
+            }
         }
-      </script>
-      
-      <footer>
+
+        function flavour(z) {
+            if (z == 11) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "flex";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "none";
+            } else if (z == 12) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "flex";
+                document.getElementById("vanilla").style.display = "none";
+            } else if (z == 13) {
+                document.getElementById("five").style.display = "none";
+                document.getElementById("eight").style.display = "none";
+                document.getElementById("wedding").style.display = "none";
+                document.getElementById("baby").style.display = "none";
+                document.getElementById("chocolate").style.display = "none";
+                document.getElementById("fruit").style.display = "none";
+                document.getElementById("vanilla").style.display = "flex";
+            } 
+        }
+    </script>
+
+    <footer>
         <div class="footer-container">
             <div class="footer-heading footer-1">
                 <h2>Site Links</h2>
@@ -190,9 +559,9 @@
                 <h2>Contact Us</h2>
                 <a href="mailto:info@moonlightcake.com">info@moonlightcake.com</a>
                 <p><a href="tel:+607-5589292">+607-558 9292</a>
-                Moonlight Cake House Sdn. Bhd.(Office)</p>
+                    Moonlight Cake House Sdn. Bhd.(Office)</p>
                 <p><a href="tel:+607-5583322">+607-558 3322</a>
-                Taman Sutera Utama (Head Quarter)</p>
+                    Taman Sutera Utama (Head Quarter)</p>
             </div>
             <div class="footer-heading footer-3">
                 <h2>Find Us On</h2>
@@ -208,9 +577,12 @@
             <div class="footer-heading footer-4">
                 <h2>Download Our App</h2>
                 <div class="appGroup">
-                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img src="pic/playstore.png" alt="Download Our App"></a>
-                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img src="pic/App-Store.png" alt="Download Our App"></a>
-                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png" alt="Download Our App"></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img
+                            src="pic/playstore.png" alt="Download Our App"></a>
+                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img
+                            src="pic/App-Store.png" alt="Download Our App"></a>
+                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png"
+                            alt="Download Our App"></a>
                 </div>
             </div>
         </div>
@@ -219,5 +591,6 @@
             <p>© Moonlight Cake House Sdn. Bhd. (MCHSB) 2021 . All Rights Reserved</p>
         </div>
     </footer>
-      </body>
-  </html>
+</body>
+
+</html>
