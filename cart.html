@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Cake House</title>
+
+    <!-- Common Links for all pages-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Header_Navi_Footer.css">
+    <link rel="icon" href="pic/icon.ico" type="image/gif" sizes="16x16">
+
+    <!-- Links specific to this page -->
+    <link rel="stylesheet" href="CSS/cart.css">
+
+
+</head>
+
+<body>
+    <!-- Header and Navi Start (Start Copying from here)-->
+    <header class="header">
+        <!-- Facebook Icon -->
+        <a href="https://www.facebook.com/MoonlightCakeHouse/">
+            <img src="pic/fb_icon.png" alt="Facebook">
+        </a>
+        <!-- Instagram Icon -->
+        <a href="https://www.instagram.com/moonlightcakehouse/">
+            <img src="pic/insta_icon.png" alt="Instagram">
+        </a>
+    </header>
+
+    <nav class="navbar" id="navbarJS">
+        <!-- Main part of navi bar, will convert to hamburger menu -->
+        <div class="mainNav" id="mainNavJS">
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="clickHamburger()"><i
+                    class="fa fa-bars"></i></a>
+            <a href="index.html">Home</a>
+            <!--Active Class change to whichever page you are on-->
+            <a href="product.html">Product</a>
+            <a href="membership.html">Membership</a>
+            <a href="news.html">News</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="outlets.html">Outlets</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="TnC.html">Terms and Conditions</a>
+        </div>
+
+        <!-- Secondary part of navi bar Search Bar and 3 Icons  -->
+        <div class="miscNav" id="miscNavJS">
+            <form action="https://webdevbasics.net/scripts/demo.php " id="search">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="register.html"><img src="pic/register.png" alt="register"></a>
+            <a href="login.html"><img src="pic/login.png" alt="login"></a>
+            <a href="cart.html" class="active"><img src="pic/cart.png" alt="shoppingCart"></a>
+        </div>
+    </nav>
+    <!-- Header and Navi End (Stop Copying Here)-->
+
+    <div class="background">
+
+        <div class="pageLayout">
+            <!-- left column Your Cart -->
+            <div class="cart">
+                <p>Your Cart </p>
+                <table>
+                    <colgroup>
+                        <col span="1" style="width: 70%;">
+                        <col span="1" style="width: 15%;">
+                        <col span="1" style="width: 15%;">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic/Fruit/freshdurian.png" alt="">
+                                    <div>
+                                        <p>The Durian</p>
+                                        <small>Price: $89.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input name="qnt_1" type="number" min="0" id="qnt_1" value="1" data-price="89.00"></td>
+                            <td id="sub_1">$89.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic/Chocolate/BelgiumChocolate.png" alt="CocoaCastle">
+                                    <div>
+                                        <p>Thousand Layer Chocolate</p>
+                                        <small>Price: $79.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input name="qnt_2" type="number"  min="0" id="qnt_2" value="1" data-price="79"></td>
+                            <td id="sub_2">$79.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="cart-info">
+                                    <img src="pic/Vanila/vanila1.png" alt="strawberry">
+                                    <div>
+                                        <p>Absolute Vanilla</p>
+                                        <small>Price: $99.00</small>
+                                        <br>
+                                        <a href="">Remove</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><input name="qnt_3" type="number" min="0" id="qnt_3" value="1" data-price="99"></td>
+                            <td id="sub_3">$99.00</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">0% SST</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Discount</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Delivery Fee</th>
+                            <td>$0.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Total:</th>
+                            <td id="ItemsTotal">$267.00</td>
+                        </tr>
+
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- Right Column Your Information -->
+            <div class="information">
+                <p>Your Information</p>
+                <form id="form" class="form-area" method="POST" action="https://webdevbasics.net/scripts/demo.php">
+
+                    <div>
+                        <label>Your Name (required)</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Smith" onchange="checkName();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label>Your Mobile Number (required)</label>
+                        <input type="tel" id="tel" name="tel" placeholder="0123456789" onchange="checkTel();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label>Your Email Address (required)</label>
+                        <input type="email" id="email" name="email" placeholder="example@domain.com"
+                            onchange="checkEmail();">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                        <br><br>
+                    </div>
+                    <div>
+                        <label for="pickup">Self Pick Up at</label>
+                        <br>
+                        <select name="pickup" id="pickup">
+                            <option value="def">Please select a location</option>
+                            <option value="bukitIndah">Bukit Indah</option>
+                            <option value="KSL">KSL</option>
+                            <option value="mtAustin">Mount Austin</option>
+                            <option value="pelangi">Pelangi</option>
+                            <option value="permasJaya">Permas Jaya</option>
+                            <option value="seriAlam">Seri Alam</option>
+                            <option value="suteraUtama">Sutera Utama</option>
+                            <option value="tamanGaya">Taman Gaya</option>
+                            <option value="setapak">Setapak</option>
+                            <option value="sriPetaling">Sri Petaling</option>
+                            <option value="bktTinggi"> Bukit Tinggi</option>
+                            <option value="puchong">Puchong</option>
+                        </select>
+                        <br><br><br>
+                    </div>
+                    <div>
+                        <label>Self Collect Date & Time (Order must be made at least 4 days prior to
+                            collectiond date)</label>
+                        <br>
+                        <input type="date">
+                        <br>
+                        <input type="time">
+                        <br><br>
+                    </div>
+                    <div class="cancel-checkout">
+                        <button>Cancel Order</button>
+                        <input type="submit" value="Check Out">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start (Start Copying Here)-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-heading footer-1">
+                <h2>Site Links</h2>
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="membership.html">Membership</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="news.html">News</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="outlets.html">Outlets</a>
+                <a href="TnC.html">Terms and Conditions</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Contact Us</h2>
+                <a href="mailto:info@moonlightcake.com">info@moonlightcake.com</a>
+                <p><a href="tel:+607-5589292">+607-558 9292</a>
+                    Moonlight Cake House Sdn. Bhd.(Office)</p>
+                <p><a href="tel:+607-5583322">+607-558 3322</a>
+                    Taman Sutera Utama (Head Quarter)</p>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Find Us On</h2>
+                <a href="https://www.instagram.com/moonlightcakehouse/">
+                    <div class="icon icon-ins"></div>
+                    @moonlightcakehouse
+                </a>
+                <a href="ttps://www.facebook.com/MoonlightCakeHouse/">
+                    <div class="icon icon-fb"></div>
+                    Moonlight Cake House
+                </a>
+            </div>
+            <div class="footer-heading footer-4">
+                <h2>Download Our App</h2>
+                <div class="appGroup">
+                    <a href="https://play.google.com/store/apps/details?id=com.moonlight.app"><img
+                            src="pic/playstore.png" alt="Download Our App"></a>
+                    <a href="https://apps.apple.com/my/app/moonlight-cake-house/id838946343"><img
+                            src="pic/App-Store.png" alt="Download Our App"></a>
+                    <a href="https://appgallery.huawei.com"><img src="pic/Huawei_appGallery.png"
+                            alt="/Assignment2Download Our App"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="endfooter">
+            <p>© Moonlight Cake House Sdn. Bhd. (MCHSB) 2021 . All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End (Stop Copying Here)-->
+
+    <!-- JQuery and Javascript Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="Javascript/cart.js"></script>
+    <script src="Javascript/feedbackValidation.js"></script>
+    <script src="Javascript/Header_Navi_Footer.js"></script>
+    
+</body>
+
+</html>
